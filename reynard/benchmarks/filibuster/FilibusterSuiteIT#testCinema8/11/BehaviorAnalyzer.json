@@ -1,0 +1,21 @@
+{
+  "max_arity" : {
+    "api-server:GET /users/chris_rivers/bookings#0" : 2,
+    "api-server#0>monolith:GET /users/chris_rivers/bookings#0" : 0,
+    "api-server#0>monolith:GET /users/chris_rivers/bookings#1" : 0
+  },
+  "failures" : [ {
+    "fault" : "Fault[uid=api-server:GET /users/chris_rivers/bookings#0, mode=HTTP_ERROR(503)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[api-server#0>monolith:GET /users/chris_rivers/bookings#1, api-server#0>monolith:GET /users/chris_rivers/bookings#0]"
+    } ]
+  } ],
+  "resiliency" : [ {
+    "point" : "api-server:GET /users/chris_rivers/bookings#0",
+    "redundancies" : [ {
+      "id" : 1,
+      "redundancy" : "[api-server#0>monolith:GET /users/chris_rivers/bookings#0]"
+    } ]
+  } ]
+}

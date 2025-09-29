@@ -1,0 +1,12 @@
+{
+  "product-catalog" : [ 200 ],
+  "quote" : [ 200 ],
+  "shipping" : [ 200, 500 ],
+  "frontend-proxy" : [ 200, 500, 502, 503, 504 ],
+  "payment" : [ 200 ],
+  "currency" : [ 200 ],
+  "checkout" : [ 200, 502, 503 ],
+  "email" : [ 200 ],
+  "cart" : [ 200 ],
+  "frontend" : [ 200, 500 ]
+}

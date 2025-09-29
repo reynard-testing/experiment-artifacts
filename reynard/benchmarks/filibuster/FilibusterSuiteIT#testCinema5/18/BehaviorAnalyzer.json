@@ -1,0 +1,18 @@
+{
+  "max_arity" : {
+    "users:GET /users/chris_rivers/bookings#0" : 2,
+    "users#0>bookings:GET /bookings/chris_rivers#0" : 0,
+    "users#0>movies:GET /movies/[uuid]#0" : 0
+  },
+  "failures" : [ ],
+  "resiliency" : [ {
+    "point" : "users:GET /users/chris_rivers/bookings#0",
+    "redundancies" : [ {
+      "id" : 1,
+      "redundancy" : "[users#0>bookings:GET /bookings/chris_rivers#0]"
+    }, {
+      "id" : 2,
+      "redundancy" : "[users#0>movies:GET /movies/[uuid]#0]"
+    } ]
+  } ]
+}

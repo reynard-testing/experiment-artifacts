@@ -1,0 +1,71 @@
+[ {
+  "point" : "frontend-proxy:POST /api/checkout#0",
+  "response" : "{\"orderId\":\"dffdf449-4584-11f0-a47c-c6cecff0be7a\",\"shippingTrackingId\":\"dce1f92c-c140-4c19-9221-7...",
+  "status" : 200,
+  "durationMs" : 135.48975
+}, {
+  "point" : "frontend-proxy#0>frontend:POST /api/checkout#0",
+  "response" : "{\"orderId\":\"dffdf449-4584-11f0-a47c-c6cecff0be7a\",\"shippingTrackingId\":\"dce1f92c-c140-4c19-9221-7...",
+  "status" : 200,
+  "durationMs" : 131.4297
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 118.605934
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/GetCart#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.287878
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.553733
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.670661
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/GetQuote#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 6.671601
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping#0>quote:POST /getquote#0",
+  "response" : "1718",
+  "status" : 200,
+  "durationMs" : 1.729805
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert#1",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.597256
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>payment:oteldemo.PaymentService/Charge#0",
+  "response" : "\u0000\u0000\u0000\u0000&$00b6269f-52aa-48b4-b212-ef3d65d34fe8",
+  "status" : 200,
+  "durationMs" : 1.965318
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/ShipOrder#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.595036
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/EmptyCart#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 3.686222
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>email:POST /send_order_confirmation#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 3.900534
+}, {
+  "point" : "frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.655039
+} ]

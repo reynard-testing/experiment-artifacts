@@ -1,0 +1,71 @@
+[ {
+  "point" : "frontend-proxy:POST /api/checkout#0",
+  "response" : "{\"orderId\":\"e31c9a16-4586-11f0-a47c-c6cecff0be7a\",\"shippingTrackingId\":\"f58995d3-0f16-4812-9fe4-b...",
+  "status" : 200,
+  "durationMs" : 193.66357
+}, {
+  "point" : "frontend-proxy#0>frontend:POST /api/checkout{}#0",
+  "response" : "{\"orderId\":\"e31c9a16-4586-11f0-a47c-c6cecff0be7a\",\"shippingTrackingId\":\"f58995d3-0f16-4812-9fe4-b...",
+  "status" : 200,
+  "durationMs" : 188.85184
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 166.95253
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/GetCart{}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.117357
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.739337
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.445123
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 7.103559
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping#0>quote:POST /getquote{}#0",
+  "response" : "1754",
+  "status" : 200,
+  "durationMs" : 1.222562
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 3.296366
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+  "response" : "\u0000\u0000\u0000\u0000&$2e6c9c6c-e14e-4394-bfe9-ff964d92bc65",
+  "status" : 200,
+  "durationMs" : 2.122807
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.581629
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 3.026152
+}, {
+  "point" : "frontend-proxy#0>frontend#0>checkout#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 3.264464
+}, {
+  "point" : "frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.153558
+} ]

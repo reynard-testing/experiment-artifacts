@@ -1,0 +1,1689 @@
+{
+  "stats" : {
+    "failure_modes" : 4,
+    "fault_injection_points" : 5,
+    "redundant_faultloads" : 0,
+    "redundant_fault_points" : 0,
+    "redundant_fault_subsets" : 0,
+    "max_queue_size" : 112,
+    "avg_queue_size" : 39.05882352941177,
+    "visited_nodes" : 180,
+    "pruned_nodes" : 132,
+    "simplified_fault_injection_points" : 5
+  },
+  "details" : {
+    "node_order" : "DEPTH_FIRST_POST_ORDER",
+    "breadth_first" : true,
+    "failure_modes" : [ "HTTP_ERROR(500)", "HTTP_ERROR(502)", "HTTP_ERROR(503)", "HTTP_ERROR(504)" ],
+    "fault_injection_point_names" : [ "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0", "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0", "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0" ],
+    "fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "geo",
+        "signature" : "geo.Geo/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "rate",
+        "signature" : "rate.Rate/GetRates",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "reservation",
+        "signature" : "reservation.Reservation/CheckAvailability",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "profile",
+        "signature" : "profile.Profile/GetProfiles",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "simplified_fault_injection_points_names" : [ "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0", "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0", "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0" ],
+    "simplified_fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "geo",
+        "signature" : "geo.Geo/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "rate",
+        "signature" : "rate.Rate/GetRates",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "search",
+        "signature" : "search.Search/Nearby",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "reservation",
+        "signature" : "reservation.Reservation/CheckAvailability",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend",
+        "signature" : "GET /hotels",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "profile",
+        "signature" : "profile.Profile/GetProfiles",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "queue_size" : [ 19, 18, 17, 16, 15, 18, 21, 24, 23, 34, 45, 56, 67, 82, 97, 112, 0 ]
+  },
+  "implications" : {
+    "downstream" : {
+      "count" : 2,
+      "list" : [ {
+        "cause_name" : "frontend:GET /hotels#0",
+        "effect_names" : [ "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0", "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0" ]
+      }, {
+        "cause_name" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+        "effect_names" : [ "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0", "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0" ]
+      } ]
+    },
+    "exclusions" : {
+      "count" : 16,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    },
+    "upstream" : {
+      "count" : 20,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /hotels#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }
+  },
+  "visited" : {
+    "in_order" : [ {
+      "index" : 0,
+      "faultload" : [ ]
+    }, {
+      "index" : 1,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 2,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 3,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 4,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 5,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 6,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 7,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 8,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 9,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 10,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 11,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 12,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 13,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 14,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 15,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 16,
+      "faultload" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    } ]
+  },
+  "tree" : {
+    "index" : 0,
+    "pruned" : false,
+    "node" : [ ],
+    "children" : [ {
+      "index" : 1,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 2,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 3,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 4,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 5,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 6,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 7,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 8,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 9,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }, {
+      "index" : 10,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }, {
+      "index" : 11,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }, {
+      "index" : 12,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }, {
+      "index" : 13,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 14,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 15,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 16,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    } ]
+  }
+}

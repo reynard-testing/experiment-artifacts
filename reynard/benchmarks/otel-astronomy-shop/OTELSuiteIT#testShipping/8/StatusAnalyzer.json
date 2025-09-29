@@ -1,0 +1,7 @@
+{
+  "quote" : [ 200 ],
+  "shipping" : [ 200, 500 ],
+  "frontend-proxy" : [ 200, 500, 502, 503, 504 ],
+  "currency" : [ 200 ],
+  "frontend" : [ 200, 500 ]
+}

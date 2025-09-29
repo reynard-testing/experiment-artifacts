@@ -1,0 +1,43 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label="cart
+.../GetCart" color=black]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"8,5,45,8,5,45" [label="product-catalog
+.../GetProduct" color=black]
+	0 -> "8,5,45,8,5,45" [label="+8"]
+	"4,9,12,4,9,12" [label="currency
+.../Convert" color=black]
+	0 -> "4,9,12,4,9,12" [label="+4"]
+	"4,13,16,4,13,16" [label="quote
+.../getquote" color=black]
+	0 -> "4,13,16,4,13,16" [label="+4"]
+	"3,17,19,4,-10841,19" [label="shipping
+.../GetQuote" color=black]
+	0 -> "3,17,19,4,-10841,19" [label="+3"]
+	"4,20,23,4,20,23" [label="currency#1
+.../Convert" color=black]
+	0 -> "4,20,23,4,20,23" [label="+4"]
+	"4,24,27,4,24,27" [label="payment
+.../Charge" color=black]
+	0 -> "4,24,27,4,24,27" [label="+4"]
+	"4,28,31,4,28,31" [label="shipping
+.../ShipOrder" color=black]
+	0 -> "4,28,31,4,28,31" [label="+4"]
+	"4,32,35,4,32,35" [label="cart
+.../EmptyCart" color=black]
+	"16,49,64,16,49,64" [label="email
+.../send_order_confirmation" color=black]
+	"4,32,35,4,32,35" -> "16,49,64,16,49,64" [label="+16"]
+	0 -> "4,32,35,4,32,35" [label="+4"]
+	"4,36,39,4,36,39" [label="email
+.../send_order_confirmation" color=black]
+	0 -> "4,36,39,4,36,39" [label="+4"]
+	"2,40,41,4,-12139,41" [label="checkout
+.../PlaceOrder" color=black]
+	0 -> "2,40,41,4,-12139,41" [label="+2"]
+	"3,46,48,4,-12284,48" [label="frontend
+.../checkout" color=black]
+	0 -> "3,46,48,4,-12284,48" [label="+3"]
+}

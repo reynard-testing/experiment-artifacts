@@ -1,0 +1,22 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"1-/bookings-users" [label="users
+/bookings"]
+	"2-/health-check-bookings-primary" [label="bookings-primary
+/health-check"]
+	"1-/bookings-users" -> "2-/health-check-bookings-primary" [label="#0"]
+	"2-/chris_rivers-bookings-primary" [label="bookings-primary
+/chris_rivers"]
+	"1-/bookings-users" -> "2-/chris_rivers-bookings-primary" [label="#0"]
+	"2-/[uuid]-movies" [label="movies
+/[uuid]"]
+	"1-/bookings-users" -> "2-/[uuid]-movies" [label="#0"]
+	"2-/chris_rivers-bookings-secondary" [label="bookings-secondary
+/chris_rivers"]
+	"1-/bookings-users" -> "2-/chris_rivers-bookings-secondary" [label="#0"]
+	"2-/chris_rivers-bookings-primary" -> "2-/[uuid]-movies" [constraint=false style=dashed]
+	"2-/chris_rivers-bookings-secondary" -> "2-/[uuid]-movies" [constraint=false style=dashed]
+	"2-/health-check-bookings-primary" -> "2-/chris_rivers-bookings-primary" [constraint=false style=dashed]
+	"2-/health-check-bookings-primary" -> "2-/chris_rivers-bookings-secondary" [color=red constraint=false style=dashed]
+}

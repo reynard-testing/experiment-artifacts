@@ -1,0 +1,6 @@
+{
+  "product-catalog" : [ 200 ],
+  "frontend-proxy" : [ 200, 500, 502, 503, 504 ],
+  "recommendation" : [ 200, 500 ],
+  "frontend" : [ 200, 500 ]
+}

@@ -1,0 +1,84 @@
+{
+  "max_arity" : {
+    "mobile-client:GET /netflix/homepage/users/chris_rivers#0" : 1,
+    "mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0" : 8,
+    "mobile-client#0>api-gateway#0>user-profile:GET /users/chris_rivers{}#0" : 0,
+    "mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>my-list:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>telemetry:POST /{bookmarks:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>trending:GET /{bookmarks:GET /users/chris_rivers:0,telemetry:POST /:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>my-list:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>global-recommendations:GET /{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>global-recommendations:GET /{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>trending:GET /{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0,
+    "mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0" : 0
+  },
+  "failures" : [ {
+    "fault" : "Fault[uid=mobile-client:GET /netflix/homepage/users/chris_rivers#0, mode=HTTP_ERROR(503)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0, mode=HTTP_ERROR(500)]]"
+    }, {
+      "id" : 2,
+      "cause" : "[Fault[uid=mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0, mode=HTTP_ERROR(503)]]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[mobile-client#0>api-gateway#0>user-profile:GET /users/chris_rivers{}#0]"
+    }, {
+      "id" : 2,
+      "cause" : "[mobile-client#0>api-gateway#0>my-list:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 3,
+      "cause" : "[mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 4,
+      "cause" : "[mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>trending:GET /{bookmarks:GET /users/chris_rivers:0,telemetry:POST /:0,user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 5,
+      "cause" : "[mobile-client#0>api-gateway#0>my-list:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 6,
+      "cause" : "[mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 7,
+      "cause" : "[mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 8,
+      "cause" : "[mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,telemetry:POST /:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 9,
+      "cause" : "[mobile-client#0>api-gateway#0>global-recommendations:GET /{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>trending:GET /{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 10,
+      "cause" : "[mobile-client#0>api-gateway#0>global-recommendations:GET /{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>ratings:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,global-recommendations:GET /:0,my-list:GET /users/chris_rivers:0,trending:GET /:0,user-profile:GET /users/chris_rivers:0,user-recommendations:GET /users/chris_rivers:0}#0, mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=mobile-client:GET /netflix/homepage/users/chris_rivers#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0, mode=HTTP_ERROR(504)]]"
+    }, {
+      "id" : 2,
+      "cause" : "[Fault[uid=mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0, mode=HTTP_ERROR(502)]]"
+    } ]
+  } ],
+  "resiliency" : [ {
+    "point" : "mobile-client#0>api-gateway:GET /homepage/users/chris_rivers{}#0",
+    "redundancies" : [ {
+      "id" : 1,
+      "redundancy" : "[mobile-client#0>api-gateway#0>bookmarks:GET /users/chris_rivers{user-profile:GET /users/chris_rivers:0}#0]"
+    }, {
+      "id" : 2,
+      "redundancy" : "[mobile-client#0>api-gateway#0>user-recommendations:GET /users/chris_rivers{bookmarks:GET /users/chris_rivers:0,my-list:GET /users/chris_rivers:0,user-profile:GET /users/chris_rivers:0}#0]"
+    } ]
+  } ]
+}

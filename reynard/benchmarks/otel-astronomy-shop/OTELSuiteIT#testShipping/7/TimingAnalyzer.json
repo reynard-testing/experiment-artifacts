@@ -1,0 +1,256 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=null]",
+    "min_ms" : 24.322277069091797,
+    "average_ms" : 24.322277069091797,
+    "max_ms" : 24.322277069091797,
+    "count" : 1,
+    "values" : [ 24.322277 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=null]",
+    "min_ms" : 20.467111587524414,
+    "average_ms" : 20.467111587524414,
+    "max_ms" : 20.467111587524414,
+    "count" : 1,
+    "values" : [ 20.467112 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=null]",
+    "min_ms" : 4.9635419845581055,
+    "average_ms" : 5.409512996673584,
+    "max_ms" : 6.601655960083008,
+    "count" : 5,
+    "values" : [ 6.601656, 5.236761, 4.963542, 5.161556, 5.08405 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=null]",
+    "min_ms" : 2.5604770183563232,
+    "average_ms" : 2.5604770183563232,
+    "max_ms" : 2.5604770183563232,
+    "count" : 1,
+    "values" : [ 2.560477 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=null]",
+    "min_ms" : 1.0140700340270996,
+    "average_ms" : 1.1635600090026856,
+    "max_ms" : 1.6510130167007446,
+    "count" : 5,
+    "values" : [ 1.651013, 1.076774, 1.030571, 1.01407, 1.045372 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 9.302741050720215,
+    "average_ms" : 15.255088025873357,
+    "max_ms" : 25.084129333496094,
+    "count" : 11,
+    "values" : [ 14.20868, 14.818621, 13.538534, 14.678712, 9.302741, 9.503155, 9.43265, 19.465843, 25.08413, 19.097015, 18.675888 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 6.0899200439453125,
+    "average_ms" : 11.630492773923008,
+    "max_ms" : 20.372005462646484,
+    "count" : 11,
+    "values" : [ 10.500624, 10.88515, 10.139999, 11.145068, 6.351238, 6.148324, 6.08992, 15.81499, 20.372005, 15.577974, 14.910128 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 3.958972930908203,
+    "average_ms" : 4.208090305328369,
+    "max_ms" : 4.561514854431152,
+    "count" : 4,
+    "values" : [ 4.236892, 4.074981, 3.958973, 4.561515 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 3.9070699214935303,
+    "average_ms" : 3.9070699214935303,
+    "max_ms" : 3.9070699214935303,
+    "count" : 1,
+    "values" : [ 3.90707 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 3.7200560569763184,
+    "average_ms" : 3.7200560569763184,
+    "max_ms" : 3.7200560569763184,
+    "count" : 1,
+    "values" : [ 3.720056 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 4.707324028015137,
+    "average_ms" : 4.707324028015137,
+    "max_ms" : 4.707324028015137,
+    "count" : 1,
+    "values" : [ 4.707324 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=null]",
+    "min_ms" : 1.5474059581756592,
+    "average_ms" : 1.5474059581756592,
+    "max_ms" : 1.5474059581756592,
+    "count" : 1,
+    "values" : [ 1.547406 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=null]",
+    "min_ms" : 1.3194910287857056,
+    "average_ms" : 1.3194910287857056,
+    "max_ms" : 1.3194910287857056,
+    "count" : 1,
+    "values" : [ 1.319491 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=null]",
+    "min_ms" : 1.0566730499267578,
+    "average_ms" : 1.1842015981674194,
+    "max_ms" : 1.2889889478683472,
+    "count" : 5,
+    "values" : [ 1.259486, 1.056673, 1.288989, 1.148679, 1.167181 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=null]",
+    "min_ms" : 1.432297945022583,
+    "average_ms" : 1.432297945022583,
+    "max_ms" : 1.432297945022583,
+    "count" : 1,
+    "values" : [ 1.432298 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=null]",
+    "min_ms" : 0.9866679906845093,
+    "average_ms" : 1.07045419216156,
+    "max_ms" : 1.1434799432754517,
+    "count" : 5,
+    "values" : [ 1.14348, 1.091176, 1.007169, 1.123778, 0.986668 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1229770183563232,
+    "average_ms" : 1.3468929095701738,
+    "max_ms" : 2.3327600955963135,
+    "count" : 11,
+    "values" : [ 1.131177, 1.372396, 1.294989, 2.33276, 1.122977, 1.203784, 1.29509, 1.253086, 1.199282, 1.271789, 1.338492 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 0.931164026260376,
+    "average_ms" : 1.0849928964268079,
+    "max_ms" : 1.1783809661865234,
+    "count" : 11,
+    "values" : [ 1.149079, 1.178381, 1.045972, 1.152179, 0.931164, 1.039772, 1.032671, 1.14878, 1.116777, 1.043072, 1.097075 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1889820098876953,
+    "average_ms" : 1.3203657567501068,
+    "max_ms" : 1.4239979982376099,
+    "count" : 4,
+    "values" : [ 1.188982, 1.423998, 1.269187, 1.399296 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.1969820261001587,
+    "average_ms" : 1.1969820261001587,
+    "max_ms" : 1.1969820261001587,
+    "count" : 1,
+    "values" : [ 1.196982 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0994759798049927,
+    "average_ms" : 1.0994759798049927,
+    "max_ms" : 1.0994759798049927,
+    "count" : 1,
+    "values" : [ 1.099476 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0039700269699097,
+    "average_ms" : 1.0039700269699097,
+    "max_ms" : 1.0039700269699097,
+    "count" : 1,
+    "values" : [ 1.00397 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping#0>quote:POST /getquote#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.29128897190094,
+    "average_ms" : 1.29128897190094,
+    "max_ms" : 1.29128897190094,
+    "count" : 1,
+    "values" : [ 1.291289 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.0161700248718262,
+    "average_ms" : 1.0161700248718262,
+    "max_ms" : 1.0161700248718262,
+    "count" : 1,
+    "values" : [ 1.01617 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.1627800464630127,
+    "average_ms" : 1.1627800464630127,
+    "max_ms" : 1.1627800464630127,
+    "count" : 1,
+    "values" : [ 1.16278 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>shipping:oteldemo.ShippingService/GetQuote#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.1699810028076172,
+    "average_ms" : 1.1699810028076172,
+    "max_ms" : 1.1699810028076172,
+    "count" : 1,
+    "values" : [ 1.169981 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.3894959688186646,
+    "average_ms" : 1.3894959688186646,
+    "max_ms" : 1.3894959688186646,
+    "count" : 1,
+    "values" : [ 1.389496 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.4337990283966064,
+    "average_ms" : 1.4337990283966064,
+    "max_ms" : 1.4337990283966064,
+    "count" : 1,
+    "values" : [ 1.433799 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.4311989545822144,
+    "average_ms" : 1.4311989545822144,
+    "max_ms" : 1.4311989545822144,
+    "count" : 1,
+    "values" : [ 1.431199 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>currency:oteldemo.CurrencyService/Convert#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.3304909467697144,
+    "average_ms" : 1.3304909467697144,
+    "max_ms" : 1.3304909467697144,
+    "count" : 1,
+    "values" : [ 1.330491 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.4594999551773071,
+    "average_ms" : 1.4594999551773071,
+    "max_ms" : 1.4594999551773071,
+    "count" : 1,
+    "values" : [ 1.4595 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2213850021362305,
+    "average_ms" : 1.2213850021362305,
+    "max_ms" : 1.2213850021362305,
+    "count" : 1,
+    "values" : [ 1.221385 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.4370989799499512,
+    "average_ms" : 1.4370989799499512,
+    "max_ms" : 1.4370989799499512,
+    "count" : 1,
+    "values" : [ 1.437099 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.3002890348434448,
+    "average_ms" : 1.3002890348434448,
+    "max_ms" : 1.3002890348434448,
+    "count" : 1,
+    "values" : [ 1.300289 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/shipping#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.5841089487075806,
+    "average_ms" : 1.5841089487075806,
+    "max_ms" : 1.5841089487075806,
+    "count" : 1,
+    "values" : [ 1.584109 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.1833820343017578,
+    "average_ms" : 1.1833820343017578,
+    "max_ms" : 1.1833820343017578,
+    "count" : 1,
+    "values" : [ 1.183382 ]
+  } ]
+}

@@ -1,0 +1,7 @@
+{
+  "db-primary" : [ 200 ],
+  "requestmapper" : [ 200 ],
+  "db-secondary" : [ 200 ],
+  "app-server" : [ 200, 500 ],
+  "load-balancer" : [ 200, 500 ]
+}

@@ -1,0 +1,10 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"1-/hotel1-api-gateway" [label="api-gateway"]
+	"2-/hotel1-review-ml" [label="review-ml"]
+	"1-/hotel1-api-gateway" -> "2-/hotel1-review-ml" [label="#0"]
+	"2-/hotel1-review-time" [label="review-time"]
+	"1-/hotel1-api-gateway" -> "2-/hotel1-review-time" [label="#0"]
+	"2-/hotel1-review-ml" -> "2-/hotel1-review-time" [color=red constraint=false style=dashed]
+}

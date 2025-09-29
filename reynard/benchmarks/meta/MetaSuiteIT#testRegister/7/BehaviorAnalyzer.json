@@ -1,0 +1,37 @@
+{
+  "max_arity" : {
+    "controller:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0" : 9,
+    "controller#0>proxy1:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0" : 0,
+    "controller#0>proxy3:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0" : 0,
+    "controller#0>proxy2:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0" : 0,
+    "controller#0>proxy1:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#1" : 0,
+    "controller#0>proxy3:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#1" : 0,
+    "controller#0>proxy2:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#1" : 0
+  },
+  "failures" : [ {
+    "fault" : "Fault[uid=controller:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[controller#0>proxy1:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#∞]"
+    }, {
+      "id" : 2,
+      "cause" : "[controller#0>proxy3:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#∞]"
+    }, {
+      "id" : 3,
+      "cause" : "[controller#0>proxy2:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#∞]"
+    } ]
+  } ],
+  "resiliency" : [ {
+    "point" : "controller:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0",
+    "redundancies" : [ {
+      "id" : 1,
+      "redundancy" : "[controller#0>proxy1:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0]"
+    }, {
+      "id" : 2,
+      "redundancy" : "[controller#0>proxy3:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0]"
+    }, {
+      "id" : 3,
+      "redundancy" : "[controller#0>proxy2:POST /v1/faultload/register(615d266ed7a6703108aa8c87e91726f33550a407e814804da982305cd6899c15)#0]"
+    } ]
+  } ]
+}

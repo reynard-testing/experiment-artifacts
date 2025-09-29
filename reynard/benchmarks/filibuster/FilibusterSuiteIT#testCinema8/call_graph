@@ -1,0 +1,9 @@
+// Call graph
+digraph {
+	rankdir=LR
+	"1-/bookings-api-server" [label="api-server"]
+	"2-/bookings-monolith" [label=monolith]
+	"1-/bookings-api-server" -> "2-/bookings-monolith" [label="#0"]
+	"2-/bookings-monolith" [label=monolith]
+	"1-/bookings-api-server" -> "2-/bookings-monolith" [label="#1"]
+}

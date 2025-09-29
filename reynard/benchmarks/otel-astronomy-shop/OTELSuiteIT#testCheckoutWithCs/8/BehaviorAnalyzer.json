@@ -1,0 +1,95 @@
+{
+  "max_arity" : {
+    "frontend-proxy:POST /api/checkout#0" : 1,
+    "frontend-proxy#0>frontend:POST /api/checkout{}#0" : 2,
+    "frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0" : 9,
+    "frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/GetCart{}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0" : 1,
+    "frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0" : 0,
+    "frontend-proxy#0>frontend#0>checkout#0>shipping#0>quote:POST /getquote{}#0" : 0
+  },
+  "failures" : [ {
+    "fault" : "Fault[uid=frontend-proxy:POST /api/checkout#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=frontend-proxy#0>frontend:POST /api/checkout{}#0, mode=HTTP_ERROR(500)]]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy#0>frontend:POST /api/checkout{}#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0]"
+    }, {
+      "id" : 2,
+      "cause" : "[frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0, mode=HTTP_ERROR(502)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/GetCart{}#0]"
+    }, {
+      "id" : 2,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0]"
+    }, {
+      "id" : 3,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0]"
+    }, {
+      "id" : 4,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0]"
+    }, {
+      "id" : 5,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0]"
+    }, {
+      "id" : 6,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0, mode=HTTP_ERROR(500)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>shipping#0>quote:POST /getquote{}#0]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0, mode=HTTP_ERROR(503)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[frontend-proxy#0>frontend#0>checkout#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy:POST /api/checkout#0, mode=HTTP_ERROR(504)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=frontend-proxy#0>frontend:POST /api/checkout{}#0, mode=HTTP_ERROR(504)]]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy:POST /api/checkout#0, mode=HTTP_ERROR(503)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=frontend-proxy#0>frontend:POST /api/checkout{}#0, mode=HTTP_ERROR(503)]]"
+    } ]
+  }, {
+    "fault" : "Fault[uid=frontend-proxy:POST /api/checkout#0, mode=HTTP_ERROR(502)]",
+    "causes" : [ {
+      "id" : 1,
+      "cause" : "[Fault[uid=frontend-proxy#0>frontend:POST /api/checkout{}#0, mode=HTTP_ERROR(502)]]"
+    } ]
+  } ],
+  "resiliency" : [ {
+    "point" : "frontend-proxy#0>frontend#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+    "redundancies" : [ {
+      "id" : 1,
+      "redundancy" : "[frontend-proxy#0>frontend#0>checkout#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0]"
+    }, {
+      "id" : 2,
+      "redundancy" : "[frontend-proxy#0>frontend#0>checkout#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0]"
+    } ]
+  } ]
+}

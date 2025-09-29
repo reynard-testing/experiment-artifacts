@@ -1,0 +1,138 @@
+{
+  "DynamicReductionPruner, UnreachabilityPruner" : {
+    "directly_pruned" : {
+      "percentage" : 200.0,
+      "count" : 16
+    }
+  },
+  "HappensBeforeNeighbourDetector" : {
+    "exclusions" : {
+      "count" : 4,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }
+  },
+  "ErrorPropagationDetector" : {
+    "upstream" : {
+      "count" : 8,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend:GET /reservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }
+  },
+  "ParentChildDetector" : {
+    "downstream" : {
+      "count" : 1,
+      "list" : [ {
+        "cause_name" : "frontend:GET /reservation#0",
+        "effect_names" : [ "frontend:GET /reservation#0>user:user.User/CheckUser#0", "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0" ]
+      } ]
+    }
+  }
+}

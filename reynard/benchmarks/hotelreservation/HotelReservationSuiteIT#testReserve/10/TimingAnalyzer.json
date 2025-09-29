@@ -1,0 +1,116 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0, mode=null]",
+    "min_ms" : 8.77847671508789,
+    "average_ms" : 8.77847671508789,
+    "max_ms" : 8.77847671508789,
+    "count" : 1,
+    "values" : [ 8.778477 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 3.2345759868621826,
+    "average_ms" : 5.190982282161713,
+    "max_ms" : 7.1693902015686035,
+    "count" : 8,
+    "values" : [ 3.587895, 3.234576, 3.656099, 3.325581, 7.057083, 6.98948, 6.507754, 7.16939 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=null]",
+    "min_ms" : 1.7721960544586182,
+    "average_ms" : 1.7721960544586182,
+    "max_ms" : 1.7721960544586182,
+    "count" : 1,
+    "values" : [ 1.772196 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=null]",
+    "min_ms" : 0.4990270137786865,
+    "average_ms" : 0.6573756098747253,
+    "max_ms" : 0.7397410273551941,
+    "count" : 5,
+    "values" : [ 0.593132, 0.724039, 0.730939, 0.499027, 0.739741 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0, mode=null]",
+    "min_ms" : 1.3390729427337646,
+    "average_ms" : 1.3390729427337646,
+    "max_ms" : 1.3390729427337646,
+    "count" : 1,
+    "values" : [ 1.339073 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.163262963294983,
+    "average_ms" : 1.244854986667633,
+    "max_ms" : 1.3788750171661377,
+    "count" : 8,
+    "values" : [ 1.346273, 1.378875, 1.267669, 1.206465, 1.163263, 1.175664, 1.179164, 1.241467 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=null]",
+    "min_ms" : 1.0136549472808838,
+    "average_ms" : 1.2123657941818238,
+    "max_ms" : 1.3439730405807495,
+    "count" : 5,
+    "values" : [ 1.234767, 1.336873, 1.343973, 1.013655, 1.132561 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1648629903793335,
+    "average_ms" : 1.1648629903793335,
+    "max_ms" : 1.1648629903793335,
+    "count" : 1,
+    "values" : [ 1.164863 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1569629907608032,
+    "average_ms" : 1.1569629907608032,
+    "max_ms" : 1.1569629907608032,
+    "count" : 1,
+    "values" : [ 1.156963 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.1203609704971313,
+    "average_ms" : 1.1203609704971313,
+    "max_ms" : 1.1203609704971313,
+    "count" : 1,
+    "values" : [ 1.120361 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.11496102809906,
+    "average_ms" : 1.11496102809906,
+    "max_ms" : 1.11496102809906,
+    "count" : 1,
+    "values" : [ 1.114961 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0728579759597778,
+    "average_ms" : 1.0728579759597778,
+    "max_ms" : 1.0728579759597778,
+    "count" : 1,
+    "values" : [ 1.072858 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0540579557418823,
+    "average_ms" : 1.0540579557418823,
+    "max_ms" : 1.0540579557418823,
+    "count" : 1,
+    "values" : [ 1.054058 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0, mode=null]",
+    "min_ms" : 1.034356951713562,
+    "average_ms" : 1.034356951713562,
+    "max_ms" : 1.034356951713562,
+    "count" : 1,
+    "values" : [ 1.034357 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.009155035018921,
+    "average_ms" : 1.009155035018921,
+    "max_ms" : 1.009155035018921,
+    "count" : 1,
+    "values" : [ 1.009155 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /reservation#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.958952009677887,
+    "average_ms" : 0.958952009677887,
+    "max_ms" : 0.958952009677887,
+    "count" : 1,
+    "values" : [ 0.958952 ]
+  } ]
+}

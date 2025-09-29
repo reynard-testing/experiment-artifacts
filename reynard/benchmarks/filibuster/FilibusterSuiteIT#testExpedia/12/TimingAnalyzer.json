@@ -1,0 +1,116 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=api-gateway:GET /review/hotels/hotel1#0, mode=null]",
+    "min_ms" : 7.942203998565674,
+    "average_ms" : 11.432936763763427,
+    "max_ms" : 13.04529857635498,
+    "count" : 5,
+    "values" : [ 7.942204, 12.501877, 11.961657, 13.045299, 11.713648 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=null]",
+    "min_ms" : 2.2157840728759766,
+    "average_ms" : 2.2157840728759766,
+    "max_ms" : 2.2157840728759766,
+    "count" : 1,
+    "values" : [ 2.215784 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=null]",
+    "min_ms" : 2.14398193359375,
+    "average_ms" : 2.295312762260437,
+    "max_ms" : 2.5043959617614746,
+    "count" : 4,
+    "values" : [ 2.277687, 2.255186, 2.504396, 2.143982 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway:GET /review/hotels/hotel1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 8.720832824707031,
+    "average_ms" : 9.078771829605103,
+    "max_ms" : 9.566065788269043,
+    "count" : 16,
+    "values" : [ 8.947141, 8.720833, 9.566066, 9.261953, 9.338357, 8.776835, 9.107248, 8.917141, 9.133649, 8.963942, 9.036245, 9.498963, 8.730333, 9.349057, 8.958843, 8.953742 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=api-gateway:GET /review/hotels/hotel1#0, mode=null]",
+    "min_ms" : 1.0974409580230713,
+    "average_ms" : 1.1829249858856201,
+    "max_ms" : 1.344751000404358,
+    "count" : 5,
+    "values" : [ 1.344751, 1.107543, 1.231347, 1.097441, 1.133543 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=null]",
+    "min_ms" : 0.9241359829902649,
+    "average_ms" : 0.9241359829902649,
+    "max_ms" : 0.9241359829902649,
+    "count" : 1,
+    "values" : [ 0.924136 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.910735011100769,
+    "average_ms" : 1.0201391935348512,
+    "max_ms" : 1.118543028831482,
+    "count" : 5,
+    "values" : [ 1.084942, 0.949036, 0.910735, 1.118543, 1.03744 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=null]",
+    "min_ms" : 0.9875379800796509,
+    "average_ms" : 1.1018420159816742,
+    "max_ms" : 1.1447440385818481,
+    "count" : 4,
+    "values" : [ 1.144243, 0.987538, 1.130843, 1.144744 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 0.9672369956970215,
+    "average_ms" : 1.0466599941253663,
+    "max_ms" : 1.132843017578125,
+    "count" : 5,
+    "values" : [ 1.132843, 1.023139, 1.092742, 0.967237, 1.017339 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0327390432357788,
+    "average_ms" : 1.1544036149978638,
+    "max_ms" : 1.5108569860458374,
+    "count" : 5,
+    "values" : [ 1.510857, 1.032739, 1.07114, 1.100842, 1.05644 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-ml:GET /hotels/hotel1#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 0.895933985710144,
+    "average_ms" : 0.9863775968551636,
+    "max_ms" : 1.0960420370101929,
+    "count" : 5,
+    "values" : [ 1.096042, 0.895934, 1.05184, 0.937836, 0.950236 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway:GET /review/hotels/hotel1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.9307360053062439,
+    "average_ms" : 1.0427522473037243,
+    "max_ms" : 1.1530430316925049,
+    "count" : 16,
+    "values" : [ 0.963437, 0.935735, 1.153043, 1.01604, 1.145443, 1.055441, 0.930736, 1.139443, 1.071141, 0.994139, 1.017939, 1.048239, 1.04694, 1.080241, 0.988837, 1.097242 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.8419319987297058,
+    "average_ms" : 1.0122387260198593,
+    "max_ms" : 1.3766529560089111,
+    "count" : 4,
+    "values" : [ 0.951736, 1.376653, 0.841932, 0.878634 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 0.9490360021591187,
+    "average_ms" : 1.063340499997139,
+    "max_ms" : 1.1994459629058838,
+    "count" : 4,
+    "values" : [ 0.974737, 1.199446, 1.130143, 0.949036 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 0.9340350031852722,
+    "average_ms" : 0.9707370102405548,
+    "max_ms" : 0.9928380250930786,
+    "count" : 4,
+    "values" : [ 0.987038, 0.934035, 0.992838, 0.969037 ]
+  }, {
+    "behaviour" : "Behaviour[uid=api-gateway#0>review-time:GET /hotels/hotel1#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 0.847432017326355,
+    "average_ms" : 0.9117850065231323,
+    "max_ms" : 1.061040997505188,
+    "count" : 4,
+    "values" : [ 0.886434, 0.847432, 1.061041, 0.852233 ]
+  } ]
+}

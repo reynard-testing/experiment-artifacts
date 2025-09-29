@@ -1,0 +1,16 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8" [label=frontend]
+	"13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8_rel" -> "13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8" [label="/recommendations #0" color=black]
+	"8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229" [label=recommendation]
+	"8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229_rel" -> "8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229" [label="/GetRecommendations #0" color=black]
+	"53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe" [label=profile]
+	"53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe_rel" -> "53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe" [label="/GetProfiles #0" color=black]
+	"13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8" -> "8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229_rel" [arrowhead=none]
+	"13f8d1f61c41bf1c817914cef6e79aa57590cc3938215fe35ca1679004d348c8" -> "53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe_rel" [arrowhead=none]
+	"8833be8fa4ceb0195e3d0cae17ccd6f1b0480e0c05b5526a737067e6de449229_rel" -> "53f9e0308ec667322cd8fa053320514a74dfaed84bbc2875f86ffab8fe338abe_rel" [color=gray constraint=false style=dashed]
+}

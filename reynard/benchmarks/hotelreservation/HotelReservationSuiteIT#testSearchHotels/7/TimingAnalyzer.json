@@ -1,0 +1,270 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0, mode=null]",
+    "min_ms" : 51.31615447998047,
+    "average_ms" : 51.31615447998047,
+    "max_ms" : 51.31615447998047,
+    "count" : 1,
+    "values" : [ 51.316154 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=null]",
+    "min_ms" : 29.875795364379883,
+    "average_ms" : 31.20176739162869,
+    "max_ms" : 32.71107482910156,
+    "count" : 9,
+    "values" : [ 30.679245, 31.423391, 29.875795, 30.541237, 30.91106, 32.02103, 30.645844, 32.711075, 32.00723 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 6.378304958343506,
+    "average_ms" : 26.08552858233452,
+    "max_ms" : 51.82368469238281,
+    "count" : 16,
+    "values" : [ 6.769129, 6.378305, 6.428808, 6.854435, 9.61771, 9.898927, 9.701615, 10.113541, 37.767494, 36.409607, 36.781933, 36.91264, 51.823685, 49.66555, 51.354355, 50.890724 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=null]",
+    "min_ms" : 20.841121673583984,
+    "average_ms" : 21.905744552612305,
+    "max_ms" : 22.634035110473633,
+    "count" : 9,
+    "values" : [ 22.448824, 20.841122, 21.44846, 21.091837, 22.300114, 21.93239, 21.871387, 22.583532, 22.634035 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=null]",
+    "min_ms" : 9.29158878326416,
+    "average_ms" : 9.62449016571045,
+    "max_ms" : 10.082038879394531,
+    "count" : 5,
+    "values" : [ 9.519303, 10.082039, 9.291589, 9.743718, 9.485802 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 3.254606008529663,
+    "average_ms" : 4.840206980705261,
+    "max_ms" : 6.425807952880859,
+    "count" : 2,
+    "values" : [ 3.254606, 6.425808 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 3.3764140605926514,
+    "average_ms" : 4.832806468009949,
+    "max_ms" : 6.289198875427246,
+    "count" : 2,
+    "values" : [ 3.376414, 6.289199 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 3.18870210647583,
+    "average_ms" : 4.702998161315918,
+    "max_ms" : 6.217294216156006,
+    "count" : 2,
+    "values" : [ 3.188702, 6.217294 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 3.03249192237854,
+    "average_ms" : 4.62064254283905,
+    "max_ms" : 6.2087931632995605,
+    "count" : 2,
+    "values" : [ 3.032492, 6.208793 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=null]",
+    "min_ms" : 1.542598009109497,
+    "average_ms" : 1.542598009109497,
+    "max_ms" : 1.542598009109497,
+    "count" : 1,
+    "values" : [ 1.542598 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=null]",
+    "min_ms" : 0.5176330208778381,
+    "average_ms" : 0.7023753844774686,
+    "max_ms" : 1.202576994895935,
+    "count" : 13,
+    "values" : [ 0.616839, 0.638941, 0.517633, 0.63584, 0.648641, 0.62684, 0.617639, 0.689744, 0.693844, 1.202577, 0.660042, 0.78965, 0.79265 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.4790929555892944,
+    "average_ms" : 1.4790929555892944,
+    "max_ms" : 1.4790929555892944,
+    "count" : 1,
+    "values" : [ 1.479093 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.4410909414291382,
+    "average_ms" : 1.4410909414291382,
+    "max_ms" : 1.4410909414291382,
+    "count" : 1,
+    "values" : [ 1.441091 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.3753869533538818,
+    "average_ms" : 1.3753869533538818,
+    "max_ms" : 1.3753869533538818,
+    "count" : 1,
+    "values" : [ 1.375387 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.3646869659423828,
+    "average_ms" : 1.3646869659423828,
+    "max_ms" : 1.3646869659423828,
+    "count" : 1,
+    "values" : [ 1.364687 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0, mode=null]",
+    "min_ms" : 1.3538860082626343,
+    "average_ms" : 1.3538860082626343,
+    "max_ms" : 1.3538860082626343,
+    "count" : 1,
+    "values" : [ 1.353886 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.3268840312957764,
+    "average_ms" : 1.3268840312957764,
+    "max_ms" : 1.3268840312957764,
+    "count" : 1,
+    "values" : [ 1.326884 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=null]",
+    "min_ms" : 1.0861680507659912,
+    "average_ms" : 1.314303421974182,
+    "max_ms" : 1.6623049974441528,
+    "count" : 5,
+    "values" : [ 1.338386, 1.662305, 1.212577, 1.272081, 1.086168 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=null]",
+    "min_ms" : 1.307183027267456,
+    "average_ms" : 1.307183027267456,
+    "max_ms" : 1.307183027267456,
+    "count" : 1,
+    "values" : [ 1.307183 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.3049830198287964,
+    "average_ms" : 1.3049830198287964,
+    "max_ms" : 1.3049830198287964,
+    "count" : 1,
+    "values" : [ 1.304983 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2302780151367188,
+    "average_ms" : 1.2302780151367188,
+    "max_ms" : 1.2302780151367188,
+    "count" : 1,
+    "values" : [ 1.230278 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0310649871826172,
+    "average_ms" : 1.2208711355924606,
+    "max_ms" : 1.4927949905395508,
+    "count" : 16,
+    "values" : [ 1.25458, 1.083968, 1.152773, 1.031065, 1.337684, 1.41489, 1.119371, 1.268681, 1.27878, 1.492795, 1.230078, 1.121171, 1.214978, 1.036165, 1.26148, 1.235479 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.2206770181655884,
+    "average_ms" : 1.2206770181655884,
+    "max_ms" : 1.2206770181655884,
+    "count" : 1,
+    "values" : [ 1.220677 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0969690084457397,
+    "average_ms" : 1.1818745136260986,
+    "max_ms" : 1.2667800188064575,
+    "count" : 2,
+    "values" : [ 1.26678, 1.096969 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.172474980354309,
+    "average_ms" : 1.172474980354309,
+    "max_ms" : 1.172474980354309,
+    "count" : 1,
+    "values" : [ 1.172475 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.1119710206985474,
+    "average_ms" : 1.1627240180969238,
+    "max_ms" : 1.2134770154953003,
+    "count" : 2,
+    "values" : [ 1.111971, 1.213477 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.1126710176467896,
+    "average_ms" : 1.1126710176467896,
+    "max_ms" : 1.1126710176467896,
+    "count" : 1,
+    "values" : [ 1.112671 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=null]",
+    "min_ms" : 0.9848620295524597,
+    "average_ms" : 1.1033364468150668,
+    "max_ms" : 1.2171770334243774,
+    "count" : 9,
+    "values" : [ 0.984862, 1.136972, 1.083268, 1.201976, 1.046067, 1.089869, 1.11297, 1.056867, 1.217177 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 0.9562600255012512,
+    "average_ms" : 1.0729680359363556,
+    "max_ms" : 1.18967604637146,
+    "count" : 2,
+    "values" : [ 0.95626, 1.189676 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0709680318832397,
+    "average_ms" : 1.0709680318832397,
+    "max_ms" : 1.0709680318832397,
+    "count" : 1,
+    "values" : [ 1.070968 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0617669820785522,
+    "average_ms" : 1.0617669820785522,
+    "max_ms" : 1.0617669820785522,
+    "count" : 1,
+    "values" : [ 1.061767 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=null]",
+    "min_ms" : 0.9012569785118103,
+    "average_ms" : 1.0545554359753926,
+    "max_ms" : 1.1458719968795776,
+    "count" : 9,
+    "values" : [ 1.097769, 1.049567, 1.066867, 1.050366, 0.95216, 1.140572, 0.901257, 1.086569, 1.145872 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.0220650434494019,
+    "average_ms" : 1.0482665300369263,
+    "max_ms" : 1.0744680166244507,
+    "count" : 2,
+    "values" : [ 1.074468, 1.022065 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0471669435501099,
+    "average_ms" : 1.0471669435501099,
+    "max_ms" : 1.0471669435501099,
+    "count" : 1,
+    "values" : [ 1.047167 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=null]",
+    "min_ms" : 0.943560004234314,
+    "average_ms" : 1.0443660754423876,
+    "max_ms" : 1.1337720155715942,
+    "count" : 13,
+    "values" : [ 1.008664, 1.122471, 1.097369, 1.067868, 1.133772, 1.085068, 1.020365, 0.972661, 0.94356, 1.019464, 1.10927, 0.986763, 1.009464 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0366660356521606,
+    "average_ms" : 1.0366660356521606,
+    "max_ms" : 1.0366660356521606,
+    "count" : 1,
+    "values" : [ 1.036666 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 0.9427599906921387,
+    "average_ms" : 0.9427599906921387,
+    "max_ms" : 0.9427599906921387,
+    "count" : 1,
+    "values" : [ 0.94276 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.911857008934021,
+    "average_ms" : 0.911857008934021,
+    "max_ms" : 0.911857008934021,
+    "count" : 1,
+    "values" : [ 0.911857 ]
+  } ]
+}

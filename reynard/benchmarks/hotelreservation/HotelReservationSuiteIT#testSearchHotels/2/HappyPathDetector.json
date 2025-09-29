@@ -1,0 +1,31 @@
+[ {
+  "point" : "frontend:GET /hotels#0",
+  "response" : "CFDAB20FFCD99D758216DD34EB196D7341A1D044A94705E1A536A0D76F73365C",
+  "status" : 200,
+  "durationMs" : 53.660255
+}, {
+  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 32.105106
+}, {
+  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.698644
+}, {
+  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 23.364462
+}, {
+  "point" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 10.057429
+}, {
+  "point" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.5929
+} ]

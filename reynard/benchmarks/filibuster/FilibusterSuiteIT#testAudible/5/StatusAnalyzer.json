@@ -1,0 +1,11 @@
+{
+  "content-delivery-service" : [ 200, 500, 503 ],
+  "ownership" : [ 200 ],
+  "audible-app" : [ 200, 503 ],
+  "asset-metadata" : [ 200 ],
+  "stats" : [ 201 ],
+  "content-delivery-engine" : [ 200 ],
+  "audio-assets" : [ 200 ],
+  "audible-download-service" : [ 200, 500 ],
+  "activation" : [ 200 ]
+}

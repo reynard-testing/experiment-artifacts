@@ -1,0 +1,26 @@
+[ {
+  "point" : "load-balancer:GET /urls/randomurl#0",
+  "response" : "{\"result\":\"randomurl\"}",
+  "status" : 200,
+  "durationMs" : 25.731281
+}, {
+  "point" : "load-balancer#0>app-server:GET /urls/randomurl#0",
+  "response" : "{\"result\":\"randomurl\"}",
+  "status" : 200,
+  "durationMs" : 19.13003
+}, {
+  "point" : "load-balancer#0>app-server#0>requestmapper:GET /urls/randomurl#0",
+  "response" : "{\"result\":\"randomurl\"}",
+  "status" : 200,
+  "durationMs" : 2.242985
+}, {
+  "point" : "load-balancer#0>app-server#0>db-primary:GET /read#0",
+  "response" : "{\"data\":\"dummy\"}",
+  "status" : 200,
+  "durationMs" : 2.186783
+}, {
+  "point" : "load-balancer#0>app-server#0>db-primary:POST /write/urls/randomurl#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.908173
+} ]

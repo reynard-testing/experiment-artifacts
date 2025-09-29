@@ -1,0 +1,17 @@
+{
+  "max_arity" : {
+    "frontend:GET /recommendations#0" : 2
+  },
+  "failures" : [ {
+    "uid" : "frontend:GET /recommendations#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0" ],
+      "all_modes" : true
+    }, {
+      "causes" : [ "frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0" ],
+      "all_modes" : true
+    } ]
+  } ],
+  "resiliency" : [ ]
+}

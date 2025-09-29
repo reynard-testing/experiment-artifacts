@@ -1,0 +1,12 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label=geo color=black]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"4,5,8,4,5,8" [label=rate color=black]
+	0 -> "4,5,8,4,5,8" [label="+4"]
+	"4,9,12,4,9,12" [label=reservation color=black]
+	0 -> "4,9,12,4,9,12" [label="+4"]
+	"4,13,16,4,13,16" [label=profile color=black]
+	0 -> "4,13,16,4,13,16" [label="+4"]
+}

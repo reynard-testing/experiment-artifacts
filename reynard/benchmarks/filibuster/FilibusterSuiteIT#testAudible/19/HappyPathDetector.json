@@ -1,0 +1,46 @@
+[ {
+  "point" : "audible-app:GET /users/user1/books/book2#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 47.810455
+}, {
+  "point" : "audible-app#0>content-delivery-engine:GET /users/user1/books/book2#0",
+  "response" : "{\"url\":\"http://content-delivery-service:5002/users/user1/books/book2\"}",
+  "status" : 200,
+  "durationMs" : 2.162984
+}, {
+  "point" : "audible-app#0>content-delivery-service:GET /users/user1/books/book2#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 36.096104
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>audible-download-service:GET /users/user1/books/book2#0",
+  "response" : "{\"license\":\"745c723e03084d27553fb9d4037b08c1\"}",
+  "status" : 200,
+  "durationMs" : 18.590523
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>audible-download-service#0>ownership:GET /users/user1/books/book2#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.202986
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>audible-download-service#0>activation:GET /books/book2#0",
+  "response" : "{\"license\":\"745c723e03084d27553fb9d4037b08c1\"}",
+  "status" : 200,
+  "durationMs" : 2.150883
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>audible-download-service#0>stats:POST /users/user1/books/book2#0",
+  "response" : "",
+  "status" : 201,
+  "durationMs" : 2.506498
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0",
+  "response" : "{\"metadata\":{\"author\":\"J. K. Rowling\",\"chapters\":[{\"id\":1,\"location\":\"0:00:00\",\"title\":\"The Worst...",
+  "status" : 200,
+  "durationMs" : 2.242287
+}, {
+  "point" : "audible-app#0>content-delivery-service#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 2.375292
+} ]

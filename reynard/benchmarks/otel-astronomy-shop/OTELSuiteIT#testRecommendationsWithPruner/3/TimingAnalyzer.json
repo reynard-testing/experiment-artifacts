@@ -1,0 +1,382 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=null]",
+    "min_ms" : 68.754150390625,
+    "average_ms" : 68.754150390625,
+    "max_ms" : 68.754150390625,
+    "count" : 1,
+    "values" : [ 68.75415 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=null]",
+    "min_ms" : 63.21275329589844,
+    "average_ms" : 63.21275329589844,
+    "max_ms" : 63.21275329589844,
+    "count" : 1,
+    "values" : [ 63.212753 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=null]",
+    "min_ms" : 5.43519401550293,
+    "average_ms" : 8.69992851075672,
+    "max_ms" : 38.535972595214844,
+    "count" : 21,
+    "values" : [ 38.535973, 8.166391, 6.837043, 10.068959, 7.038351, 5.435194, 6.776442, 6.57485, 6.846569, 6.114119, 8.144259, 13.897853, 7.908542, 6.004412, 6.042015, 5.608885, 5.68039, 5.54818, 8.211963, 7.113387, 6.144721 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=null]",
+    "min_ms" : 0.7692530155181885,
+    "average_ms" : 2.2409872000034037,
+    "max_ms" : 7.470411777496338,
+    "count" : 13,
+    "values" : [ 1.95737, 5.499777, 2.33126, 1.913932, 2.031339, 1.216583, 1.590709, 0.828557, 0.769253, 1.408697, 1.254186, 0.860759, 7.470412 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=null]",
+    "min_ms" : 0.8145560026168823,
+    "average_ms" : 2.2692716809419484,
+    "max_ms" : 7.822535991668701,
+    "count" : 13,
+    "values" : [ 2.449688, 1.474853, 1.877767, 1.380394, 0.983368, 1.241185, 0.998868, 4.206788, 1.716818, 2.340261, 2.19345, 0.814556, 7.822536 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=null]",
+    "min_ms" : 0.7645270228385925,
+    "average_ms" : 2.004927300489866,
+    "max_ms" : 4.904335975646973,
+    "count" : 13,
+    "values" : [ 1.816865, 0.764527, 1.447951, 2.065942, 1.557507, 1.391196, 4.904336, 1.205183, 3.086712, 1.098775, 2.579176, 1.200983, 2.944902 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=null]",
+    "min_ms" : 0.7513520121574402,
+    "average_ms" : 2.1971237613604617,
+    "max_ms" : 7.77797794342041,
+    "count" : 13,
+    "values" : [ 7.777978, 1.720461, 1.134241, 1.130477, 2.832295, 1.057572, 4.745425, 1.89433, 1.868128, 1.326991, 1.282988, 1.040371, 0.751352 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=null]",
+    "min_ms" : 0.809054970741272,
+    "average_ms" : 2.305289089679718,
+    "max_ms" : 18.346553802490234,
+    "count" : 21,
+    "values" : [ 18.346554, 3.401121, 1.361349, 5.087282, 1.314246, 0.895032, 1.460352, 1.053072, 1.532505, 1.01957, 1.263287, 1.363894, 1.999037, 0.830657, 0.843958, 0.865259, 0.898562, 0.809055, 1.935933, 1.257186, 0.87316 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 9.21642780303955,
+    "average_ms" : 21.446625886140048,
+    "max_ms" : 32.47382736206055,
+    "count" : 27,
+    "values" : [ 20.923046, 22.445, 23.410234, 19.700102, 30.077171, 15.614157, 15.518453, 16.729797, 9.216428, 9.750247, 10.044858, 24.388668, 25.404406, 28.949684, 20.984838, 20.84493, 28.452951, 32.473827, 24.483278, 21.325163, 21.749191, 22.219624, 19.510038, 21.407269, 23.45921, 22.434238, 27.54209 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 6.071415901184082,
+    "average_ms" : 18.050250989419443,
+    "max_ms" : 28.836978912353516,
+    "count" : 27,
+    "values" : [ 18.159649, 18.738068, 20.684837, 16.797998, 27.080465, 12.878359, 12.543147, 13.425879, 6.071416, 6.199421, 6.286224, 20.924246, 22.025185, 25.164125, 17.980034, 17.19438, 23.46601, 28.836979, 21.036743, 17.34879, 18.9509, 18.150345, 16.398624, 18.015535, 20.372196, 19.334427, 23.292797 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 6.497530937194824,
+    "average_ms" : 10.355919122695923,
+    "max_ms" : 20.844043731689453,
+    "count" : 4,
+    "values" : [ 20.844044, 6.888846, 6.497531, 7.193256 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 3.2289209365844727,
+    "average_ms" : 3.2289209365844727,
+    "max_ms" : 3.2289209365844727,
+    "count" : 1,
+    "values" : [ 3.228921 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 3.910667896270752,
+    "average_ms" : 3.910667896270752,
+    "max_ms" : 3.910667896270752,
+    "count" : 1,
+    "values" : [ 3.910668 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 3.2373220920562744,
+    "average_ms" : 3.2373220920562744,
+    "max_ms" : 3.2373220920562744,
+    "count" : 1,
+    "values" : [ 3.237322 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=null]",
+    "min_ms" : 1.7845629453659058,
+    "average_ms" : 1.7845629453659058,
+    "max_ms" : 1.7845629453659058,
+    "count" : 1,
+    "values" : [ 1.784563 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=null]",
+    "min_ms" : 2.6478939056396484,
+    "average_ms" : 2.6478939056396484,
+    "max_ms" : 2.6478939056396484,
+    "count" : 1,
+    "values" : [ 2.647894 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=null]",
+    "min_ms" : 1.0849390029907227,
+    "average_ms" : 1.4749389262426467,
+    "max_ms" : 2.4471681118011475,
+    "count" : 21,
+    "values" : [ 1.437251, 1.205043, 1.489354, 1.084939, 1.39145, 1.116839, 1.672759, 1.434999, 1.568109, 1.343793, 2.167048, 2.447168, 1.478202, 1.288388, 1.297689, 1.540505, 1.196282, 1.519104, 1.359693, 1.401797, 1.533305 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=null]",
+    "min_ms" : 1.1200770139694214,
+    "average_ms" : 1.3915616915776179,
+    "max_ms" : 1.9069299697875977,
+    "count" : 13,
+    "values" : [ 1.242544, 1.213284, 1.90693, 1.507903, 1.304089, 1.196482, 1.278388, 1.120077, 1.350793, 1.558007, 1.377295, 1.317791, 1.716719 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=null]",
+    "min_ms" : 1.1679810285568237,
+    "average_ms" : 1.4707366136404185,
+    "max_ms" : 2.209752082824707,
+    "count" : 13,
+    "values" : [ 1.362748, 1.373449, 1.40045, 1.546006, 1.393795, 1.291789, 1.634512, 1.167981, 1.496903, 1.498703, 1.409097, 1.334391, 2.209752 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=null]",
+    "min_ms" : 1.2756459712982178,
+    "average_ms" : 1.8615716328987708,
+    "max_ms" : 6.551750183105469,
+    "count" : 13,
+    "values" : [ 1.279245, 1.275646, 1.348848, 1.560107, 1.324591, 1.292588, 1.867628, 1.648513, 1.431498, 1.765421, 1.516005, 1.338591, 6.55175 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=null]",
+    "min_ms" : 1.2010829448699951,
+    "average_ms" : 1.482253148005559,
+    "max_ms" : 1.832226037979126,
+    "count" : 13,
+    "values" : [ 1.373548, 1.330648, 1.290446, 1.73442, 1.4654, 1.701817, 1.832226, 1.534705, 1.437199, 1.349592, 1.569808, 1.201083, 1.448399 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=null]",
+    "min_ms" : 1.0115360021591187,
+    "average_ms" : 1.472711097626459,
+    "max_ms" : 4.850131988525391,
+    "count" : 21,
+    "values" : [ 1.639459, 1.198843, 1.324747, 1.097439, 1.11774, 1.011536, 1.361248, 1.180281, 1.254586, 1.31319, 1.888929, 4.850132, 1.217484, 1.420098, 1.15968, 1.238786, 1.290288, 1.156679, 1.352892, 1.532506, 1.32039 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0943390130996704,
+    "average_ms" : 1.4590823385450575,
+    "max_ms" : 2.3007590770721436,
+    "count" : 27,
+    "values" : [ 1.202943, 1.654759, 1.286946, 1.10784, 1.266645, 1.274545, 1.094339, 1.483353, 1.397151, 1.185243, 1.475653, 1.494654, 1.731862, 1.398997, 1.31929, 1.339692, 1.987236, 2.300759, 1.583309, 1.327591, 1.32659, 1.31499, 1.963535, 1.569107, 1.542305, 1.521904, 1.243985 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 0.9586340188980103,
+    "average_ms" : 1.2383371127976313,
+    "max_ms" : 1.924731969833374,
+    "count" : 27,
+    "values" : [ 0.967634, 1.152341, 1.030637, 1.092839, 1.066338, 0.958634, 1.11814, 1.199743, 1.124941, 1.391249, 1.377749, 1.189142, 1.240744, 1.31079, 1.118176, 1.205183, 1.571507, 1.579408, 1.359993, 1.924732, 1.076573, 1.116477, 1.305291, 1.16628, 1.141778, 1.310891, 1.337892 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2148430347442627,
+    "average_ms" : 1.3252969980239868,
+    "max_ms" : 1.435750961303711,
+    "count" : 2,
+    "values" : [ 1.214843, 1.435751 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2650450468063354,
+    "average_ms" : 1.4191765189170837,
+    "max_ms" : 1.573307991027832,
+    "count" : 2,
+    "values" : [ 1.265045, 1.573308 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2576860189437866,
+    "average_ms" : 1.2784165143966675,
+    "max_ms" : 1.2991470098495483,
+    "count" : 2,
+    "values" : [ 1.299147, 1.257686 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.3028470277786255,
+    "average_ms" : 1.4634795188903809,
+    "max_ms" : 1.6241120100021362,
+    "count" : 2,
+    "values" : [ 1.302847, 1.624112 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.238644003868103,
+    "average_ms" : 1.3018959760665894,
+    "max_ms" : 1.3651479482650757,
+    "count" : 2,
+    "values" : [ 1.238644, 1.365148 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.3464479446411133,
+    "average_ms" : 1.5728854537010193,
+    "max_ms" : 1.7993229627609253,
+    "count" : 2,
+    "values" : [ 1.346448, 1.799323 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.4401520490646362,
+    "average_ms" : 1.482528030872345,
+    "max_ms" : 1.5249040126800537,
+    "count" : 2,
+    "values" : [ 1.440152, 1.524904 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.2683449983596802,
+    "average_ms" : 1.3347705006599426,
+    "max_ms" : 1.401196002960205,
+    "count" : 2,
+    "values" : [ 1.268345, 1.401196 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.361948013305664,
+    "average_ms" : 1.3716714978218079,
+    "max_ms" : 1.3813949823379517,
+    "count" : 2,
+    "values" : [ 1.361948, 1.381395 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.37424898147583,
+    "average_ms" : 1.5110809803009033,
+    "max_ms" : 1.6479129791259766,
+    "count" : 2,
+    "values" : [ 1.374249, 1.647913 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.2514859437942505,
+    "average_ms" : 1.3135674595832825,
+    "max_ms" : 1.3756489753723145,
+    "count" : 2,
+    "values" : [ 1.375649, 1.251486 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.4080959558486938,
+    "average_ms" : 1.4300734996795654,
+    "max_ms" : 1.452051043510437,
+    "count" : 2,
+    "values" : [ 1.452051, 1.408096 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0458379983901978,
+    "average_ms" : 1.2074159979820251,
+    "max_ms" : 1.3689939975738525,
+    "count" : 2,
+    "values" : [ 1.045838, 1.368994 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1239399909973145,
+    "average_ms" : 1.288670003414154,
+    "max_ms" : 1.4534000158309937,
+    "count" : 2,
+    "values" : [ 1.12394, 1.4534 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1767419576644897,
+    "average_ms" : 1.3419229984283447,
+    "max_ms" : 1.5071040391921997,
+    "count" : 2,
+    "values" : [ 1.176742, 1.507104 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.2123429775238037,
+    "average_ms" : 3.7648884057998657,
+    "max_ms" : 6.317433834075928,
+    "count" : 2,
+    "values" : [ 1.212343, 6.317434 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1466410160064697,
+    "average_ms" : 1.2344194948673248,
+    "max_ms" : 1.3637490272521973,
+    "count" : 4,
+    "values" : [ 1.363749, 1.146641, 1.213844, 1.213444 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.164741039276123,
+    "average_ms" : 1.164741039276123,
+    "max_ms" : 1.164741039276123,
+    "count" : 1,
+    "values" : [ 1.164741 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.1146399974822998,
+    "average_ms" : 1.1146399974822998,
+    "max_ms" : 1.1146399974822998,
+    "count" : 1,
+    "values" : [ 1.11464 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0161360502243042,
+    "average_ms" : 1.0161360502243042,
+    "max_ms" : 1.0161360502243042,
+    "count" : 1,
+    "values" : [ 1.016136 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0731379985809326,
+    "average_ms" : 1.0731379985809326,
+    "max_ms" : 1.0731379985809326,
+    "count" : 1,
+    "values" : [ 1.073138 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.3561489582061768,
+    "average_ms" : 1.3561489582061768,
+    "max_ms" : 1.3561489582061768,
+    "count" : 1,
+    "values" : [ 1.356149 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.3408479690551758,
+    "average_ms" : 1.3408479690551758,
+    "max_ms" : 1.3408479690551758,
+    "count" : 1,
+    "values" : [ 1.340848 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.3116470575332642,
+    "average_ms" : 1.3116470575332642,
+    "max_ms" : 1.3116470575332642,
+    "count" : 1,
+    "values" : [ 1.311647 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.527904987335205,
+    "average_ms" : 1.527904987335205,
+    "max_ms" : 1.527904987335205,
+    "count" : 1,
+    "values" : [ 1.527905 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.3151910305023193,
+    "average_ms" : 1.3151910305023193,
+    "max_ms" : 1.3151910305023193,
+    "count" : 1,
+    "values" : [ 1.315191 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.4221969842910767,
+    "average_ms" : 1.4221969842910767,
+    "max_ms" : 1.4221969842910767,
+    "count" : 1,
+    "values" : [ 1.422197 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.540405035018921,
+    "average_ms" : 1.540405035018921,
+    "max_ms" : 1.540405035018921,
+    "count" : 1,
+    "values" : [ 1.540405 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy:GET /api/recommendations#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.4110970497131348,
+    "average_ms" : 1.4110970497131348,
+    "max_ms" : 1.4110970497131348,
+    "count" : 1,
+    "values" : [ 1.411097 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend-proxy#0>frontend:GET /api/recommendations#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.2492849826812744,
+    "average_ms" : 1.2492849826812744,
+    "max_ms" : 1.2492849826812744,
+    "count" : 1,
+    "values" : [ 1.249285 ]
+  } ]
+}

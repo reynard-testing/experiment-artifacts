@@ -1,0 +1,14 @@
+{
+  "max_arity" : {
+    "frontend:GET /user#0" : 1
+  },
+  "failures" : [ {
+    "uid" : "frontend:GET /user#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "frontend:GET /user#0>user:user.User/CheckUser#0" ],
+      "all_modes" : true
+    } ]
+  } ],
+  "resiliency" : [ ]
+}

@@ -1,0 +1,98 @@
+{
+  "DynamicReductionPruner" : {
+    "directly_pruned" : {
+      "count" : 1,
+      "percentage" : 14.285714285714286
+    }
+  },
+  "ErrorPropagationDetector" : {
+    "upstream" : {
+      "count" : 8,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "ParentChildDetector" : {
+    "downstream" : {
+      "count" : 2,
+      "list" : [ {
+        "cause_name" : "users:GET /users/chris_rivers/bookings#0",
+        "effect_names" : [ "users#0>bookings:GET /bookings/chris_rivers#0" ]
+      }, {
+        "cause_name" : "users#0>bookings:GET /bookings/chris_rivers#0",
+        "effect_names" : [ "users#0>bookings#0>movies:GET /movies/[uuid]#0" ]
+      } ]
+    }
+  }
+}

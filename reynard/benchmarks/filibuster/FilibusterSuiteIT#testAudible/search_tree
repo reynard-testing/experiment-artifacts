@@ -1,0 +1,20 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label="content-delivery-engine" color=black]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"4,5,8,4,5,8" [label=ownership color=black]
+	0 -> "4,5,8,4,5,8" [label="+4"]
+	"4,9,12,4,9,12" [label=activation color=black]
+	0 -> "4,9,12,4,9,12" [label="+4"]
+	"4,13,16,4,13,16" [label=stats color=black]
+	0 -> "4,13,16,4,13,16" [label="+4"]
+	"3,17,19,4,-68632,19" [label="audible-download-service" color=black]
+	0 -> "3,17,19,4,-68632,19" [label="+3"]
+	"4,20,23,4,20,23" [label="asset-metadata" color=black]
+	0 -> "4,20,23,4,20,23" [label="+4"]
+	"4,24,27,4,24,27" [label="audio-assets" color=black]
+	0 -> "4,24,27,4,24,27" [label="+4"]
+	"2,28,29,4,-68782,29" [label="content-delivery-service" color=black]
+	0 -> "2,28,29,4,-68782,29" [label="+2"]
+}

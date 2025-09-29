@@ -1,0 +1,31 @@
+[ {
+  "point" : "a-backend:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 159.97455
+}, {
+  "point" : "a-backend#0>b-retry:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 14.028174
+}, {
+  "point" : "a-backend#0>c-fallback:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 42.585743
+}, {
+  "point" : "a-backend#0>c-fallback#0>d-leaf:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 11.513471
+}, {
+  "point" : "a-backend#0>e-propagate:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 54.42693
+}, {
+  "point" : "a-backend#0>e-propagate#0>f-leaf:GET /#0",
+  "response" : "Hello World!",
+  "status" : 200,
+  "durationMs" : 16.601479
+} ]

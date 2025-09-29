@@ -1,0 +1,5 @@
+{
+  "profile" : [ 200 ],
+  "recommendation" : [ 200 ],
+  "frontend" : [ 200, 500 ]
+}

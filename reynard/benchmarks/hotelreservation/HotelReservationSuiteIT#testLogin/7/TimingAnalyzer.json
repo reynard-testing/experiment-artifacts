@@ -1,0 +1,74 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0, mode=null]",
+    "min_ms" : 3.9336259365081787,
+    "average_ms" : 3.9336259365081787,
+    "max_ms" : 3.9336259365081787,
+    "count" : 1,
+    "values" : [ 3.933626 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 3.171983003616333,
+    "average_ms" : 3.3639185428619385,
+    "max_ms" : 3.6803109645843506,
+    "count" : 4,
+    "values" : [ 3.680311, 3.30169, 3.30169, 3.171983 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=null]",
+    "min_ms" : 0.4873279929161072,
+    "average_ms" : 0.4873279929161072,
+    "max_ms" : 0.4873279929161072,
+    "count" : 1,
+    "values" : [ 0.487328 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0, mode=null]",
+    "min_ms" : 1.3348770141601562,
+    "average_ms" : 1.3348770141601562,
+    "max_ms" : 1.3348770141601562,
+    "count" : 1,
+    "values" : [ 1.334877 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0163580179214478,
+    "average_ms" : 1.1902432441711426,
+    "max_ms" : 1.2776739597320557,
+    "count" : 4,
+    "values" : [ 1.277674, 1.016358, 1.21827, 1.248671 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0921629667282104,
+    "average_ms" : 1.0921629667282104,
+    "max_ms" : 1.0921629667282104,
+    "count" : 1,
+    "values" : [ 1.092163 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=null]",
+    "min_ms" : 1.0205579996109009,
+    "average_ms" : 1.0205579996109009,
+    "max_ms" : 1.0205579996109009,
+    "count" : 1,
+    "values" : [ 1.020558 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.9633550047874451,
+    "average_ms" : 0.9633550047874451,
+    "max_ms" : 0.9633550047874451,
+    "count" : 1,
+    "values" : [ 0.963355 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 0.9252529740333557,
+    "average_ms" : 0.9252529740333557,
+    "max_ms" : 0.9252529740333557,
+    "count" : 1,
+    "values" : [ 0.925253 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /user#0>user:user.User/CheckUser#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 0.9193530082702637,
+    "average_ms" : 0.9193530082702637,
+    "max_ms" : 0.9193530082702637,
+    "count" : 1,
+    "values" : [ 0.919353 ]
+  } ]
+}
