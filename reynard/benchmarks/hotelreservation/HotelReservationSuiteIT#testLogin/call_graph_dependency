@@ -1,0 +1,11 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"0b9eefe4c4bcd09c3695001d702d113c7472da3ebf022917be940c561a82093c" [label=frontend]
+	"0b9eefe4c4bcd09c3695001d702d113c7472da3ebf022917be940c561a82093c_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"0b9eefe4c4bcd09c3695001d702d113c7472da3ebf022917be940c561a82093c_rel" -> "0b9eefe4c4bcd09c3695001d702d113c7472da3ebf022917be940c561a82093c" [label="/user #0" color=black]
+	"11995eb39429f0e3db68f97c4f1d72d6bd083c682fc1c1fd0a30ecaff6456f7b" [label=user]
+	"11995eb39429f0e3db68f97c4f1d72d6bd083c682fc1c1fd0a30ecaff6456f7b_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"11995eb39429f0e3db68f97c4f1d72d6bd083c682fc1c1fd0a30ecaff6456f7b_rel" -> "11995eb39429f0e3db68f97c4f1d72d6bd083c682fc1c1fd0a30ecaff6456f7b" [label="/CheckUser #0" color=black]
+	"0b9eefe4c4bcd09c3695001d702d113c7472da3ebf022917be940c561a82093c" -> "11995eb39429f0e3db68f97c4f1d72d6bd083c682fc1c1fd0a30ecaff6456f7b_rel" [arrowhead=none]
+}

@@ -1,0 +1,22 @@
+// Call graph with dependencies
+digraph {
+	"1-.../-a-backend" [label="a-backend"]
+	"2-.../-b-retry" [label="b-retry"]
+	"1-.../-a-backend" -> "2-.../-b-retry" [label="#0"]
+	"2-.../-c-fallback" [label="c-fallback"]
+	"3-.../-d-leaf" [label="d-leaf"]
+	"2-.../-c-fallback" -> "3-.../-d-leaf" [label="#0"]
+	"1-.../-a-backend" -> "2-.../-c-fallback" [label="#0"]
+	"2-.../-e-propagate" [label="e-propagate"]
+	"3-.../-f-leaf" [label="f-leaf"]
+	"2-.../-e-propagate" -> "3-.../-f-leaf" [label="#0"]
+	"1-.../-a-backend" -> "2-.../-e-propagate" [label="#0"]
+	"2-.../-b-retry" [label="b-retry"]
+	"1-.../-a-backend" -> "2-.../-b-retry" [label="#1"]
+	"2-.../-g-fallback-f" [label="g-fallback-f"]
+	"1-.../-a-backend" -> "2-.../-g-fallback-f" [label="#0"]
+	"2-.../-b-retry" -> "2-.../-c-fallback" [constraint=false style=dashed]
+	"2-.../-b-retry" -> "2-.../-e-propagate" [constraint=false style=dashed]
+	"2-.../-b-retry" -> "2-.../-b-retry" [color=red constraint=false style=dashed]
+	"2-.../-e-propagate" -> "2-.../-g-fallback-f" [color=red constraint=false style=dashed]
+}

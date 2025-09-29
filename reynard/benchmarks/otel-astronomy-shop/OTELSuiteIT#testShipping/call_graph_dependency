@@ -1,0 +1,14 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"1-.../shipping-frontend-proxy" [label="frontend-proxy"]
+	"2-.../shipping-frontend" [label=frontend]
+	"3-.../GetQuote-shipping" [label=shipping]
+	"4-.../getquote-quote" [label=quote]
+	"3-.../GetQuote-shipping" -> "4-.../getquote-quote" [label="#0"]
+	"2-.../shipping-frontend" -> "3-.../GetQuote-shipping" [label="#0"]
+	"3-.../Convert-currency" [label=currency]
+	"2-.../shipping-frontend" -> "3-.../Convert-currency" [label="#0"]
+	"3-.../GetQuote-shipping" -> "3-.../Convert-currency" [constraint=false style=dashed]
+	"1-.../shipping-frontend-proxy" -> "2-.../shipping-frontend" [label="#0"]
+}

@@ -1,0 +1,24 @@
+// Call graph
+digraph {
+	rankdir=LR
+	"1-/randomurl-load-balancer" [label="load-balancer
+/randomurl"]
+	"2-/randomurl-app-server" [label="app-server
+/randomurl"]
+	"3-/randomurl-requestmapper" [label="requestmapper
+/randomurl"]
+	"2-/randomurl-app-server" -> "3-/randomurl-requestmapper" [label="#0"]
+	"3-/read-db-primary" [label="db-primary
+/read"]
+	"2-/randomurl-app-server" -> "3-/read-db-primary" [label="#0"]
+	"3-/randomurl-db-primary" [label="db-primary
+/randomurl"]
+	"2-/randomurl-app-server" -> "3-/randomurl-db-primary" [label="#0"]
+	"3-/read-db-secondary" [label="db-secondary
+/read"]
+	"2-/randomurl-app-server" -> "3-/read-db-secondary" [label="#0"]
+	"3-/randomurl-db-secondary" [label="db-secondary
+/randomurl"]
+	"2-/randomurl-app-server" -> "3-/randomurl-db-secondary" [label="#0"]
+	"1-/randomurl-load-balancer" -> "2-/randomurl-app-server" [label="#0"]
+}

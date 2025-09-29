@@ -1,0 +1,48 @@
+// Call graph
+digraph {
+	rankdir=LR
+	"1-.../checkout-frontend-proxy" [label="frontend-proxy
+.../checkout"]
+	"2-.../checkout-frontend" [label="frontend
+.../checkout"]
+	"3-.../PlaceOrder-checkout" [label="checkout
+.../PlaceOrder"]
+	"4-.../GetCart-cart" [label="cart
+.../GetCart"]
+	"3-.../PlaceOrder-checkout" -> "4-.../GetCart-cart" [label="#0"]
+	"4-.../GetProduct-product-catalog" [label="product-catalog
+.../GetProduct"]
+	"3-.../PlaceOrder-checkout" -> "4-.../GetProduct-product-catalog" [label="#0"]
+	"4-.../Convert-currency" [label="currency
+.../Convert"]
+	"3-.../PlaceOrder-checkout" -> "4-.../Convert-currency" [label="#0"]
+	"4-.../GetQuote-shipping" [label="shipping
+.../GetQuote"]
+	"5-.../getquote-quote" [label="quote
+.../getquote"]
+	"4-.../GetQuote-shipping" -> "5-.../getquote-quote" [label="#0"]
+	"3-.../PlaceOrder-checkout" -> "4-.../GetQuote-shipping" [label="#0"]
+	"4-.../Convert-currency" [label="currency
+.../Convert"]
+	"3-.../PlaceOrder-checkout" -> "4-.../Convert-currency" [label="#1"]
+	"4-.../Charge-payment" [label="payment
+.../Charge"]
+	"3-.../PlaceOrder-checkout" -> "4-.../Charge-payment" [label="#0"]
+	"4-.../ShipOrder-shipping" [label="shipping
+.../ShipOrder"]
+	"5-.../getquote-quote" [label="quote
+.../getquote"]
+	"4-.../ShipOrder-shipping" -> "5-.../getquote-quote" [label="#0"]
+	"3-.../PlaceOrder-checkout" -> "4-.../ShipOrder-shipping" [label="#0"]
+	"4-.../EmptyCart-cart" [label="cart
+.../EmptyCart"]
+	"3-.../PlaceOrder-checkout" -> "4-.../EmptyCart-cart" [label="#0"]
+	"4-.../send_order_confirmation-email" [label="email
+.../send_order_confirmation"]
+	"3-.../PlaceOrder-checkout" -> "4-.../send_order_confirmation-email" [label="#0"]
+	"2-.../checkout-frontend" -> "3-.../PlaceOrder-checkout" [label="#0"]
+	"3-.../GetProduct-product-catalog" [label="product-catalog
+.../GetProduct"]
+	"2-.../checkout-frontend" -> "3-.../GetProduct-product-catalog" [label="#0"]
+	"1-.../checkout-frontend-proxy" -> "2-.../checkout-frontend" [label="#0"]
+}

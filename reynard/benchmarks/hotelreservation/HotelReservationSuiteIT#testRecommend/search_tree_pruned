@@ -1,0 +1,10 @@
+// Faultspace Search with pruned
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label=recommendation color=black]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"4,5,8,4,5,8" [label=profile color=black]
+	"0,0,0,16,-17,-2" [label=recommendation color=red]
+	"4,5,8,4,5,8" -> "0,0,0,16,-17,-2" [label=-16]
+	0 -> "4,5,8,4,5,8" [label="+4"]
+}
