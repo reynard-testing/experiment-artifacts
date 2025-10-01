@@ -1,12 +1,3 @@
-{
-  "trending" : [ 200 ],
-  "bookmarks" : [ 200 ],
-  "my-list" : [ 200 ],
-  "user-profile" : [ 200 ],
-  "ratings" : [ 200 ],
-  "global-recommendations" : [ 200 ],
-  "user-recommendations" : [ 200 ],
-  "api-gateway" : [ 200, 500 ],
-  "telemetry" : [ 200 ],
-  "mobile-client" : [ 200, 500, 503 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ccb46b9356a74df2338d34be7031192db4b9749c4bc1bc72b8ceb018df49f0e1
+size 295

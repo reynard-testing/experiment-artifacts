@@ -1,20 +1,3 @@
-{
-  "max_arity" : {
-    "controller:POST /v1/faultload/register(54856bce)#0" : 3
-  },
-  "failures" : [ {
-    "uid" : "controller:POST /v1/faultload/register(54856bce)#0",
-    "mode" : "HTTP_ERROR(500)",
-    "causes" : [ {
-      "causes" : [ "controller:POST /v1/faultload/register(54856bce)#0>proxy2:POST /v1/faultload/register(54856bce)#0" ],
-      "all_modes" : true
-    }, {
-      "causes" : [ "controller:POST /v1/faultload/register(54856bce)#0>proxy1:POST /v1/faultload/register(54856bce)#0" ],
-      "all_modes" : true
-    }, {
-      "causes" : [ "controller:POST /v1/faultload/register(54856bce)#0>proxy3:POST /v1/faultload/register(54856bce)#0" ],
-      "all_modes" : true
-    } ]
-  } ],
-  "resiliency" : [ ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9de8282077a836f28fe3f93946026c09edcfda9c4f92a7a3bcd9fbac0f7fc8f
+size 718

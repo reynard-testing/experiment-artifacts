@@ -1,19 +1,3 @@
-[ {
-  "propagated_fault" : {
-    "mode" : "HTTP_ERROR(504)",
-    "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0"
-  },
-  "causes" : [ [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(504)]" ], [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(504)]" ] ]
-}, {
-  "propagated_fault" : {
-    "mode" : "HTTP_ERROR(503)",
-    "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0"
-  },
-  "causes" : [ [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(503)]" ], [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(503)]" ] ]
-}, {
-  "propagated_fault" : {
-    "mode" : "HTTP_ERROR(502)",
-    "uid" : "frontend:GET /hotels#0>search:search.Search/Nearby#0"
-  },
-  "causes" : [ [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0, mode=HTTP_ERROR(502)]" ], [ "Fault[uid=frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0, mode=HTTP_ERROR(502)]" ] ]
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:a315cc6fce5f74a5dd92f419dd2e857f20f7a2d96483f75eeb642cecdc761dc3
+size 1151

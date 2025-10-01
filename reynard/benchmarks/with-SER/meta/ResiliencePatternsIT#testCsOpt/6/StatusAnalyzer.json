@@ -1,9 +1,3 @@
-{
-  "c-fallback" : [ 200 ],
-  "e-propagate" : [ 200, 500 ],
-  "d-leaf" : [ 200 ],
-  "a-backend" : [ 200, 500 ],
-  "f-leaf" : [ 200 ],
-  "g-fallback-f" : [ 200 ],
-  "b-retry" : [ 200 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf6d54d28f38f097f7c8e0a52c15bd549b73a1e2aa9b55f4163243d64d02a92b
+size 185

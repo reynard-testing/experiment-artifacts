@@ -1,5 +1,3 @@
-{
-  "profile" : [ 200 ],
-  "recommendation" : [ 200 ],
-  "frontend" : [ 200, 500 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9067a8c9ad4ee0169bdf414bbd3ec2709b86c4e571f1f385408ec09f18bec32a
+size 84

@@ -1,31 +1,3 @@
-[ {
-  "point" : "a-backend:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 129.16658
-}, {
-  "point" : "a-backend:GET /#0>b-retry:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 11.130878
-}, {
-  "point" : "a-backend:GET /#0>c-fallback:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 29.194874
-}, {
-  "point" : "a-backend:GET /#0>c-fallback:GET /#0>d-leaf:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 7.674948
-}, {
-  "point" : "a-backend:GET /#0>e-propagate:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 44.433
-}, {
-  "point" : "a-backend:GET /#0>e-propagate:GET /#0>f-leaf:GET /#0",
-  "response" : "Hello World!",
-  "status" : 200,
-  "durationMs" : 7.759181
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d60a0550f87b9cc065714b04fa5df68ba1f5c4c9cdaf5d9a2258466aad91d6a0
+size 805

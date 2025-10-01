@@ -1,32 +1,3 @@
-{
-  "max_arity" : {
-    "controller:POST /v1/faultload/register(2399b6d4)#0" : 9
-  },
-  "failures" : [ {
-    "uid" : "controller:POST /v1/faultload/register(2399b6d4)#0",
-    "mode" : "HTTP_ERROR(500)",
-    "causes" : [ {
-      "causes" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy3:POST /v1/faultload/register(2399b6d4)#∞" ],
-      "all_modes" : true
-    }, {
-      "causes" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy1:POST /v1/faultload/register(2399b6d4)#∞" ],
-      "all_modes" : true
-    }, {
-      "causes" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy2:POST /v1/faultload/register(2399b6d4)#∞" ],
-      "all_modes" : true
-    } ]
-  } ],
-  "resiliency" : [ {
-    "point" : "controller:POST /v1/faultload/register(2399b6d4)#0",
-    "redundancies" : [ {
-      "redundancy" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy3:POST /v1/faultload/register(2399b6d4)#0" ],
-      "all_modes" : true
-    }, {
-      "redundancy" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy1:POST /v1/faultload/register(2399b6d4)#0" ],
-      "all_modes" : true
-    }, {
-      "redundancy" : [ "controller:POST /v1/faultload/register(2399b6d4)#0>proxy2:POST /v1/faultload/register(2399b6d4)#0" ],
-      "all_modes" : true
-    } ]
-  } ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e9c442e1d610835b6f2bbae8adfd01c195faf01cc75b067a0051482567618b0
+size 1302

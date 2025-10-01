@@ -1,21 +1,3 @@
-[ {
-  "point" : "controller:POST /v1/faultload/register(44fc8b31)#0",
-  "response" : "OK",
-  "status" : 200,
-  "durationMs" : 45.05027
-}, {
-  "point" : "controller:POST /v1/faultload/register(44fc8b31)#0>proxy1:POST /v1/faultload/register(44fc8b31)#0",
-  "response" : "OK",
-  "status" : 200,
-  "durationMs" : 31.597878
-}, {
-  "point" : "controller:POST /v1/faultload/register(44fc8b31)#0>proxy2:POST /v1/faultload/register(44fc8b31)#0",
-  "response" : "OK",
-  "status" : 200,
-  "durationMs" : 33.363094
-}, {
-  "point" : "controller:POST /v1/faultload/register(44fc8b31)#0>proxy3:POST /v1/faultload/register(44fc8b31)#0",
-  "response" : "OK",
-  "status" : 200,
-  "durationMs" : 31.140062
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c762c433412cc0a764e4ca7ce54f9605273f7f9173c4116c5ab13011f70cdfb
+size 690

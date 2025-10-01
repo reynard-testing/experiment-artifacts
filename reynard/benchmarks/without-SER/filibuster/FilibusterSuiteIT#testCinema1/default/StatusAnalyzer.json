@@ -1,5 +1,3 @@
-{
-  "movies" : [ 200 ],
-  "bookings" : [ 200 ],
-  "users" : [ 200, 503 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9b7b7130233d31a8a96c6aa42d00af0cc69b20409c472e45f3c62689c1bbf67
+size 74

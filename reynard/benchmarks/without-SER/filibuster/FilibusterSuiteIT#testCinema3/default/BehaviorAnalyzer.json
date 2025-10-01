@@ -1,36 +1,3 @@
-{
-  "max_arity" : {
-    "users:GET /users/chris_rivers/bookings#0" : 2,
-    "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" : 1,
-    "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1" : 1
-  },
-  "failures" : [ {
-    "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
-    "mode" : "HTTP_ERROR(503)",
-    "causes" : [ {
-      "causes" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0" ],
-      "all_modes" : true
-    } ]
-  }, {
-    "uid" : "users:GET /users/chris_rivers/bookings#0",
-    "mode" : "HTTP_ERROR(503)",
-    "causes" : [ {
-      "causes" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1" ],
-      "all_modes" : true
-    } ]
-  }, {
-    "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
-    "mode" : "HTTP_ERROR(503)",
-    "causes" : [ {
-      "causes" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0" ],
-      "all_modes" : true
-    } ]
-  } ],
-  "resiliency" : [ {
-    "point" : "users:GET /users/chris_rivers/bookings#0",
-    "redundancies" : [ {
-      "redundancy" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" ],
-      "all_modes" : true
-    } ]
-  } ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f072578f3d800cb26bd77f4c21c7a6fead0d1a92ae507b3d3e67141badabf7b
+size 1490

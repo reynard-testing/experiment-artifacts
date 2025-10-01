@@ -1,26 +1,3 @@
-[ {
-  "point" : "load-balancer:GET /urls/randomurl#0",
-  "response" : "{\"result\":\"randomurl\"}",
-  "status" : 200,
-  "durationMs" : 26.376204
-}, {
-  "point" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
-  "response" : "{\"result\":\"randomurl\"}",
-  "status" : 200,
-  "durationMs" : 19.78687
-}, {
-  "point" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
-  "response" : "{\"result\":\"randomurl\"}",
-  "status" : 200,
-  "durationMs" : 2.474417
-}, {
-  "point" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
-  "response" : "{\"data\":\"dummy\"}",
-  "status" : 200,
-  "durationMs" : 2.101326
-}, {
-  "point" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 2.014882
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:70cb4186f208e6277734e548ee300e1890002b06e6dcf40123ba27631610b0aa
+size 927

@@ -1,1 +1,3 @@
-[ "DynamicExplorationGenerator(Generator, Analyzer, Reporter)", "HappyPathDetector(Analyzer, Reporter)", "ParentChildDetector(Analyzer)", "HappensBeforeNeighbourDetector(Analyzer)", "ErrorPropagationDetector(Analyzer)", "ConditionalPointDetector(Analyzer, Reporter)", "RedundancyAnalyzer(Analyzer, Reporter)", "StatusAnalyzer(Analyzer, Reporter)", "BehaviorAnalyzer(Analyzer, Reporter)", "TimingAnalyzer(Analyzer, Reporter)", "StatusPropagationOracle(Analyzer, Reporter)", "FaultsWithoutCauseOracle(Analyzer, Reporter)", "ConcurrencyDetector(Analyzer, Reporter)", "UnreachabilityPruner(Pruner)", "NoImpactPruner(Analyzer, Pruner)", "DynamicReductionPruner(Pruner)" ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:6066685dfb69489723b2e922bd43247eef2d7067431c1ea2acd9fdf092ebc6c3
+size 666

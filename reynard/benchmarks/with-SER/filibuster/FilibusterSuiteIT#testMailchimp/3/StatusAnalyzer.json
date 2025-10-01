@@ -1,7 +1,3 @@
-{
-  "db-primary" : [ 200 ],
-  "requestmapper" : [ 200 ],
-  "db-secondary" : [ 200 ],
-  "app-server" : [ 200, 500 ],
-  "load-balancer" : [ 200, 500 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be9259975e2e6cbf0eb654707da03a17544db20b8b2d16a85b1709a23736859f
+size 150

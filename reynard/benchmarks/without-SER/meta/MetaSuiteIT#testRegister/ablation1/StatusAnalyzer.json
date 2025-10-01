@@ -1,6 +1,3 @@
-{
-  "controller" : [ 200, 500 ],
-  "proxy1" : [ 200 ],
-  "proxy3" : [ 200 ],
-  "proxy2" : [ 200 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0da9a65193af10dfa67ef4a3637b50db36e6ad354b5fab57455fee2161a25add
+size 99

@@ -1,25 +1,3 @@
-[ {
-  "uid" : "controller:POST /v1/faultload/register(3c1b1622)#0>proxy2:POST /v1/faultload/register(3c1b1622)#0",
-  "modes" : {
-    "HTTP_ERROR(502)" : 4,
-    "HTTP_ERROR(503)" : 4,
-    "HTTP_ERROR(504)" : 4,
-    "HTTP_ERROR(500)" : 4
-  }
-}, {
-  "uid" : "controller:POST /v1/faultload/register(3c1b1622)#0>proxy1:POST /v1/faultload/register(3c1b1622)#0",
-  "modes" : {
-    "HTTP_ERROR(504)" : 4,
-    "HTTP_ERROR(503)" : 4,
-    "HTTP_ERROR(502)" : 4,
-    "HTTP_ERROR(500)" : 4
-  }
-}, {
-  "uid" : "controller:POST /v1/faultload/register(3c1b1622)#0>proxy3:POST /v1/faultload/register(3c1b1622)#0",
-  "modes" : {
-    "HTTP_ERROR(500)" : 4,
-    "HTTP_ERROR(502)" : 4,
-    "HTTP_ERROR(503)" : 4,
-    "HTTP_ERROR(504)" : 4
-  }
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:218843e1b0614f0a2100321372e8a97ad7f253905455f31c54165232f84ad500
+size 725

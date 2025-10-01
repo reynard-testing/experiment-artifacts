@@ -1,8 +1,3 @@
-{
-  "faultspace_size" : 390624,
-  "complete_space_size" : 390625,
-  "total_generated" : 535,
-  "prune_invocations" : 1405,
-  "total_run" : 536,
-  "cases_run" : 535
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab08b3c2435b4305718d19a31cdcb2864378dc8508e8ffd7e294b16ed55f3628
+size 165

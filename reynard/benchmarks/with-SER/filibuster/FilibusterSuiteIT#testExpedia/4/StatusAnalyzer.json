@@ -1,5 +1,3 @@
-{
-  "review-ml" : [ 200 ],
-  "api-gateway" : [ 200, 503 ],
-  "review-time" : [ 200 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d4b0a952ab93fd3c38a015552c80bc2ead9f9015324cb3f472e7bb74ee2efc2
+size 86

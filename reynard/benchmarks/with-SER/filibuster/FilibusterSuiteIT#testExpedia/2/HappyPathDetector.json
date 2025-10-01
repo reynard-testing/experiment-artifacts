@@ -1,11 +1,3 @@
-[ {
-  "point" : "api-gateway:GET /review/hotels/hotel1#0",
-  "response" : "{\"reviews\":[{\"rating\":10,\"review\":\"Best hotel ever!\",\"timestamp\":\"2018-07-21\"},{\"rating\":8,\"revie...",
-  "status" : 200,
-  "durationMs" : 9.394078
-}, {
-  "point" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
-  "response" : "{\"reviews\":[{\"rating\":10,\"review\":\"Best hotel ever!\",\"timestamp\":\"2018-07-21\"},{\"rating\":8,\"revie...",
-  "status" : 200,
-  "durationMs" : 2.529877
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b68328a3adbd895ce9ad1a09115b437f296aaaf3f51adfb96a6e40e400f1660
+size 509

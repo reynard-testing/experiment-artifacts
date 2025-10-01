@@ -1,31 +1,3 @@
-[ {
-  "point" : "frontend:GET /hotels#0",
-  "response" : "CDC83F9E8F373BBAD5FA32041E2DA368F37B82767FC203B64D0EDB8ACAA5B9C9",
-  "status" : 200,
-  "durationMs" : 57.187668
-}, {
-  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 35.13992
-}, {
-  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>geo:geo.Geo/Nearby#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 0.631466
-}, {
-  "point" : "frontend:GET /hotels#0>search:search.Search/Nearby#0>rate:rate.Rate/GetRates#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 24.03011
-}, {
-  "point" : "frontend:GET /hotels#0>reservation:reservation.Reservation/CheckAvailability#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 9.769406
-}, {
-  "point" : "frontend:GET /hotels#0>profile:profile.Profile/GetProfiles#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 1.57784
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:9bc0c18b658a8aa0ee0d640598afa9832dc5fd34064b8e36fe127b38dd731af6
+size 933

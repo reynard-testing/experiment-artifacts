@@ -1,7 +1,3 @@
-[ {
-  "propagated_fault" : {
-    "uid" : "users:GET /users/chris_rivers/bookings#0",
-    "mode" : "HTTP_ERROR(503)"
-  },
-  "causes" : [ [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(504)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(503)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(500)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(502)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(500)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(504)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(503)]" ], [ "Fault[uid=users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(502)]" ] ]
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:83552a01c113a441f3dbd8821267d717f7718e63df1f1f4cce89629643dcf7a8
+size 1052

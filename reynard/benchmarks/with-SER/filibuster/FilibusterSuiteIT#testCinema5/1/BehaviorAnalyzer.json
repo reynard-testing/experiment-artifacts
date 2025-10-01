@@ -1,16 +1,3 @@
-{
-  "max_arity" : {
-    "users:GET /users/chris_rivers/bookings#0" : 2
-  },
-  "failures" : [ ],
-  "resiliency" : [ {
-    "point" : "users:GET /users/chris_rivers/bookings#0",
-    "redundancies" : [ {
-      "redundancy" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" ],
-      "all_modes" : true
-    }, {
-      "redundancy" : [ "users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0" ],
-      "all_modes" : true
-    } ]
-  } ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce1283817475fe1aa729d2fd08d0847d98f925e51e24e3355e3c337b6ecd048b
+size 478

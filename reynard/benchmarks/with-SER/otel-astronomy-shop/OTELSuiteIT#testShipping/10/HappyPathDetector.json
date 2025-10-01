@@ -1,26 +1,3 @@
-[ {
-  "point" : "frontend-proxy:GET /api/shipping#0",
-  "response" : "{\"currencyCode\":\"USD\",\"units\":76,\"nanos\":500000000}",
-  "status" : 200,
-  "durationMs" : 24.42359
-}, {
-  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
-  "response" : "{\"currencyCode\":\"USD\",\"units\":76,\"nanos\":500000000}",
-  "status" : 200,
-  "durationMs" : 20.65492
-}, {
-  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 5.916644
-}, {
-  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
-  "response" : "76.5",
-  "status" : 200,
-  "durationMs" : 0.929716
-}, {
-  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 2.733504
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d499efbaed4934a4312c58aa2ab75038bb50bf7a4dd5172d9dba4403cbe5080c
+size 987

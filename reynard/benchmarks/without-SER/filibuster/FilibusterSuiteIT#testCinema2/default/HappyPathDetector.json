@@ -1,16 +1,3 @@
-[ {
-  "point" : "users:GET /users/chris_rivers/bookings#0",
-  "response" : "{\"20151201\":[{\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}]}",
-  "status" : 200,
-  "durationMs" : 27.053019
-}, {
-  "point" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
-  "response" : "{\"20151201\":[{\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}]}",
-  "status" : 200,
-  "durationMs" : 15.796065
-}, {
-  "point" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
-  "response" : "{\"director\":\"Ryan Coogler\",\"id\":\"267eedb8-0f5d-42d5-8f43-72426b9fb3e6\",\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}",
-  "status" : 200,
-  "durationMs" : 3.779386
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:91bc514897a7bb08a1c6ef8a9663a375a204f7eb9aab47274c7dcebd93894a5d
+size 871

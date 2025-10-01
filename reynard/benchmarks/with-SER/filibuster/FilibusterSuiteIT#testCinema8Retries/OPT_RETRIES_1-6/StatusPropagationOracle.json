@@ -1,7 +1,3 @@
-[ {
-  "propagated_fault" : {
-    "mode" : "HTTP_ERROR(503)",
-    "uid" : "api-server:GET /users/chris_rivers/bookings#0"
-  },
-  "causes" : [ [ "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(504)]", "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(504)]" ], [ "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(500)]", "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(500)]" ], [ "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(503)]", "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(503)]" ], [ "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(502)]", "Fault[uid=api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#∞, mode=HTTP_ERROR(502)]" ] ]
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ff48d70da46dfee7301a6105bba9915c7934af300aefab62b3265e05adb448d
+size 1185

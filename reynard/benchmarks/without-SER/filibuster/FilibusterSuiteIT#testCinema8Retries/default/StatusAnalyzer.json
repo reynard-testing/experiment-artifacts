@@ -1,4 +1,3 @@
-{
-  "monolith" : [ 200 ],
-  "api-server" : [ 200, 503 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9deca535fc992815b0ced971f97539356be246f42bf996b1278ee96cbf1d6971
+size 57

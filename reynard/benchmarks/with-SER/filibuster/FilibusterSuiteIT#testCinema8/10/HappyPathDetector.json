@@ -1,11 +1,3 @@
-[ {
-  "point" : "api-server:GET /users/chris_rivers/bookings#0",
-  "response" : "{\"20151201\":[{\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}]}",
-  "status" : 200,
-  "durationMs" : 8.67406
-}, {
-  "point" : "api-server:GET /users/chris_rivers/bookings#0>monolith:GET /users/chris_rivers/bookings#0",
-  "response" : "{\"20151201\":[{\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}]}",
-  "status" : 200,
-  "durationMs" : 2.35334
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:16d447d0f28ca482bd179d12676f88f1ab83fbadd648480bb83b207be6ace216
+size 522

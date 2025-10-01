@@ -1,11 +1,3 @@
-{
-  "content-delivery-service" : [ 200, 500, 503 ],
-  "ownership" : [ 200 ],
-  "audible-app" : [ 200, 503 ],
-  "asset-metadata" : [ 200 ],
-  "stats" : [ 201 ],
-  "content-delivery-engine" : [ 200 ],
-  "audio-assets" : [ 200 ],
-  "audible-download-service" : [ 200, 500 ],
-  "activation" : [ 200 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:964e5a2235bb40c6bd670074d9784ed547b48724441741f4e161aa23e036bf27
+size 298

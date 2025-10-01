@@ -1,16 +1,3 @@
-[ {
-  "point" : "frontend:GET /recommendations#0",
-  "response" : "5E143B8EFFA0FF6A1B22CB1D16901165A3393E4EF878066EB4CE6749B0AE641B",
-  "status" : 200,
-  "durationMs" : 8.350887
-}, {
-  "point" : "frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 0.663205
-}, {
-  "point" : "frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 1.001534
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:0bd68863627f508aa4a59fd0cfe5a8c65191fd48849b1d6962d49f586a93d0b9
+size 515

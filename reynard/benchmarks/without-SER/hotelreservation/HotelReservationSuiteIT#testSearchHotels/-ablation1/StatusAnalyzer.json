@@ -1,8 +1,3 @@
-{
-  "geo" : [ 200 ],
-  "search" : [ 200, 500, 502, 503, 504 ],
-  "rate" : [ 200 ],
-  "profile" : [ 200 ],
-  "reservation" : [ 200 ],
-  "frontend" : [ 200, 500 ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d71b1680a0e81ed3810541f9cec7d53ae778d7deb785b102ea909aacdc52322a
+size 162

@@ -1,16 +1,3 @@
-[ {
-  "point" : "frontend:GET /reservation#0",
-  "response" : "5CEFBF73D0D9778824F8C11986BA6CC036332660C33DA3826B34E7738316E4A1",
-  "status" : 200,
-  "durationMs" : 9.943055
-}, {
-  "point" : "frontend:GET /reservation#0>user:user.User/CheckUser#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 0.593207
-}, {
-  "point" : "frontend:GET /reservation#0>reservation:reservation.Reservation/MakeReservation#0",
-  "response" : "",
-  "status" : 200,
-  "durationMs" : 1.848874
-} ]
+version https://git-lfs.github.com/spec/v1
+oid sha256:772b4f5eb432837d07fd3d6fcb11c12e8f96156968e642eebb4df0b15fe7a5b8
+size 480
