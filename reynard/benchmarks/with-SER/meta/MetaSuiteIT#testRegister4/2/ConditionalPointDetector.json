@@ -1,0 +1,25 @@
+[ {
+  "uid" : "controller:POST /v1/faultload/register(2b51cae6)#0>proxy3:POST /v1/faultload/register(2b51cae6)#0",
+  "modes" : {
+    "HTTP_ERROR(503)" : 4,
+    "HTTP_ERROR(504)" : 4,
+    "HTTP_ERROR(500)" : 4,
+    "HTTP_ERROR(502)" : 4
+  }
+}, {
+  "uid" : "controller:POST /v1/faultload/register(2b51cae6)#0>proxy1:POST /v1/faultload/register(2b51cae6)#0",
+  "modes" : {
+    "HTTP_ERROR(500)" : 4,
+    "HTTP_ERROR(503)" : 4,
+    "HTTP_ERROR(504)" : 4,
+    "HTTP_ERROR(502)" : 4
+  }
+}, {
+  "uid" : "controller:POST /v1/faultload/register(2b51cae6)#0>proxy2:POST /v1/faultload/register(2b51cae6)#0",
+  "modes" : {
+    "HTTP_ERROR(504)" : 4,
+    "HTTP_ERROR(503)" : 4,
+    "HTTP_ERROR(502)" : 4,
+    "HTTP_ERROR(500)" : 4
+  }
+} ]

@@ -1,0 +1,389 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 50.75791549682617,
+    "average_ms" : 52.43086700439453,
+    "max_ms" : 56.006893157958984,
+    "count" : 5,
+    "values" : [ 50.95525, 56.006893, 52.051186, 50.757915, 52.38309 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 37.21871566772461,
+    "average_ms" : 39.11085586547851,
+    "max_ms" : 41.5643310546875,
+    "count" : 5,
+    "values" : [ 39.001144, 41.56433, 38.8812, 38.88889, 37.218716 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 6.258759021759033,
+    "average_ms" : 30.872128505706787,
+    "max_ms" : 63.81523513793945,
+    "count" : 25,
+    "values" : [ 6.829192, 6.65054, 6.776051, 6.258759, 27.080362, 25.04518, 27.121304, 27.066065, 34.262913, 35.933395, 37.97507, 30.616297, 18.267342, 18.550226, 18.352041, 44.81079, 44.015297, 52.79397, 45.071987, 63.815235, 58.928436, 59.46747, 50.60002, 13.284597, 12.230674 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 5.747995853424072,
+    "average_ms" : 25.183833652072483,
+    "max_ms" : 48.39509582519531,
+    "count" : 18,
+    "values" : [ 14.309368, 12.152973, 13.664999, 14.652465, 20.64155, 20.666956, 19.607817, 18.449854, 5.747996, 6.465054, 31.458464, 31.149199, 38.47037, 32.405174, 48.395096, 44.2558, 43.19235, 37.623524 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 18.369266510009766,
+    "average_ms" : 22.54765980060284,
+    "max_ms" : 31.474395751953125,
+    "count" : 13,
+    "values" : [ 20.607462, 21.659052, 19.437664, 19.135998, 18.369267, 21.243101, 20.746151, 27.642244, 21.791124, 31.474396, 25.133644, 24.323656, 21.555819 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 5.91044282913208,
+    "average_ms" : 9.759881556034088,
+    "max_ms" : 13.497151374816895,
+    "count" : 8,
+    "values" : [ 7.743921, 5.910443, 6.480139, 7.03342, 13.497151, 13.308797, 12.548721, 11.55646 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 5.952916145324707,
+    "average_ms" : 5.952916145324707,
+    "max_ms" : 5.952916145324707,
+    "count" : 1,
+    "values" : [ 5.952916 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=null]",
+    "min_ms" : 2.3864810466766357,
+    "average_ms" : 2.7248692512512207,
+    "max_ms" : 3.2943880558013916,
+    "count" : 5,
+    "values" : [ 2.575524, 2.668329, 2.699624, 3.294388, 2.386481 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 2.6007750034332275,
+    "average_ms" : 2.712390899658203,
+    "max_ms" : 2.8204081058502197,
+    "count" : 9,
+    "values" : [ 2.600775, 2.607373, 2.715656, 2.721696, 2.750738, 2.728837, 2.749638, 2.820408, 2.716397 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 2.1663060188293457,
+    "average_ms" : 2.598708755829755,
+    "max_ms" : 6.900413990020752,
+    "count" : 17,
+    "values" : [ 2.226587, 2.354459, 2.328238, 2.251726, 2.357739, 2.586253, 2.197605, 2.180765, 2.207955, 2.166306, 2.172106, 2.532942, 2.302781, 6.900414, 2.486381, 2.690736, 2.235056 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=null]",
+    "min_ms" : 2.2608280181884766,
+    "average_ms" : 2.5653747411874623,
+    "max_ms" : 3.6102750301361084,
+    "count" : 13,
+    "values" : [ 2.294717, 2.260828, 2.262936, 2.505743, 2.620165, 2.350098, 2.293147, 3.610275, 2.482181, 3.220238, 2.552653, 2.50707, 2.38982 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 2.192795991897583,
+    "average_ms" : 2.509666919708252,
+    "max_ms" : 3.283708095550537,
+    "count" : 26,
+    "values" : [ 2.258546, 2.409396, 2.349953, 2.548144, 2.344389, 2.227217, 3.067274, 3.283708, 2.295858, 2.481841, 2.364529, 2.203206, 2.462523, 2.274348, 2.395794, 2.192796, 2.343248, 2.667095, 2.581883, 2.706017, 3.212408, 2.782618, 2.619187, 2.268878, 2.572965, 2.337519 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=null]",
+    "min_ms" : 2.211016893386841,
+    "average_ms" : 2.3703055381774902,
+    "max_ms" : 2.7540791034698486,
+    "count" : 9,
+    "values" : [ 2.265787, 2.375239, 2.389489, 2.244297, 2.332653, 2.313148, 2.447041, 2.754079, 2.211017 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.7009309530258179,
+    "average_ms" : 1.7009309530258179,
+    "max_ms" : 1.7009309530258179,
+    "count" : 1,
+    "values" : [ 1.700931 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.505499005317688,
+    "average_ms" : 1.505499005317688,
+    "max_ms" : 1.505499005317688,
+    "count" : 1,
+    "values" : [ 1.505499 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.3980000019073486,
+    "average_ms" : 1.3980000019073486,
+    "max_ms" : 1.3980000019073486,
+    "count" : 1,
+    "values" : [ 1.398 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.397508978843689,
+    "average_ms" : 1.397508978843689,
+    "max_ms" : 1.397508978843689,
+    "count" : 1,
+    "values" : [ 1.397509 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.3599079847335815,
+    "average_ms" : 1.3599079847335815,
+    "max_ms" : 1.3599079847335815,
+    "count" : 1,
+    "values" : [ 1.359908 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 1.1890250444412231,
+    "average_ms" : 1.3582269906997682,
+    "max_ms" : 1.4144999980926514,
+    "count" : 5,
+    "values" : [ 1.373608, 1.4145, 1.407293, 1.189025, 1.406709 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.3517910242080688,
+    "average_ms" : 1.3517910242080688,
+    "max_ms" : 1.3517910242080688,
+    "count" : 1,
+    "values" : [ 1.351791 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.1199040412902832,
+    "average_ms" : 1.3517351484298705,
+    "max_ms" : 2.1844658851623535,
+    "count" : 25,
+    "values" : [ 1.365846, 1.189114, 1.265536, 1.228496, 1.266357, 1.391729, 1.276327, 1.183164, 1.119904, 1.307087, 1.598964, 1.283496, 1.207632, 1.288356, 1.657125, 1.226056, 1.154353, 1.417009, 1.126759, 1.561919, 1.311657, 2.184466, 1.44665, 1.46774, 1.267637 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.3460580110549927,
+    "average_ms" : 1.3460580110549927,
+    "max_ms" : 1.3460580110549927,
+    "count" : 1,
+    "values" : [ 1.346058 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.3428380489349365,
+    "average_ms" : 1.3428380489349365,
+    "max_ms" : 1.3428380489349365,
+    "count" : 1,
+    "values" : [ 1.342838 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 0.9945510029792786,
+    "average_ms" : 1.334460437297821,
+    "max_ms" : 2.0812549591064453,
+    "count" : 9,
+    "values" : [ 1.086413, 1.247387, 0.994551, 2.081255, 1.220936, 1.319178, 1.334427, 1.508822, 1.217175 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=null]",
+    "min_ms" : 0.9555590152740479,
+    "average_ms" : 1.3213759339772737,
+    "max_ms" : 2.309807062149048,
+    "count" : 13,
+    "values" : [ 1.087563, 1.178554, 0.96061, 2.309807, 0.955559, 1.071162, 1.209486, 1.686875, 1.217286, 1.569892, 1.43935, 1.438242, 1.053501 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.2955060005187988,
+    "average_ms" : 1.2955060005187988,
+    "max_ms" : 1.2955060005187988,
+    "count" : 1,
+    "values" : [ 1.295506 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2948980331420898,
+    "average_ms" : 1.2948980331420898,
+    "max_ms" : 1.2948980331420898,
+    "count" : 1,
+    "values" : [ 1.294898 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.29276704788208,
+    "average_ms" : 1.29276704788208,
+    "max_ms" : 1.29276704788208,
+    "count" : 1,
+    "values" : [ 1.292767 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.2904469966888428,
+    "average_ms" : 1.2904469966888428,
+    "max_ms" : 1.2904469966888428,
+    "count" : 1,
+    "values" : [ 1.290447 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1193230152130127,
+    "average_ms" : 1.2557592540979385,
+    "max_ms" : 1.4056689739227295,
+    "count" : 8,
+    "values" : [ 1.231926, 1.119323, 1.262222, 1.311347, 1.405669, 1.204235, 1.184574, 1.326778 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 1.029222011566162,
+    "average_ms" : 1.2543146060063288,
+    "max_ms" : 1.6528249979019165,
+    "count" : 26,
+    "values" : [ 1.049892, 1.167284, 1.267492, 1.158304, 1.184735, 1.219036, 1.378848, 1.410279, 1.125154, 1.294228, 1.245526, 1.136333, 1.205344, 1.295686, 1.154369, 1.109884, 1.121663, 1.142864, 1.560113, 1.029222, 1.239305, 1.652825, 1.496971, 1.481921, 1.222056, 1.262846 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 0.9911410212516785,
+    "average_ms" : 1.2511821319075191,
+    "max_ms" : 1.9624600410461426,
+    "count" : 17,
+    "values" : [ 1.105462, 1.350868, 1.100703, 1.055963, 1.231955, 1.535402, 1.087503, 0.991141, 1.021702, 1.097382, 1.185344, 1.306192, 1.129593, 1.96246, 1.319018, 1.339017, 1.450391 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.240267038345337,
+    "average_ms" : 1.240267038345337,
+    "max_ms" : 1.240267038345337,
+    "count" : 1,
+    "values" : [ 1.240267 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.0489109754562378,
+    "average_ms" : 1.2226884961128235,
+    "max_ms" : 1.48048996925354,
+    "count" : 18,
+    "values" : [ 1.154644, 1.261536, 1.16249, 1.091743, 1.134894, 1.280397, 1.361879, 1.249646, 1.136853, 1.048911, 1.233336, 1.271386, 1.109752, 1.070593, 1.48049, 1.431971, 1.300797, 1.227075 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 1.0387979745864868,
+    "average_ms" : 1.2129551630753737,
+    "max_ms" : 1.460860013961792,
+    "count" : 13,
+    "values" : [ 1.045127, 1.46086, 1.144574, 1.118653, 1.038798, 1.222386, 1.138274, 1.156064, 1.276526, 1.45971, 1.331556, 1.189944, 1.185945 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.210325002670288,
+    "average_ms" : 1.210325002670288,
+    "max_ms" : 1.210325002670288,
+    "count" : 1,
+    "values" : [ 1.210325 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=null]",
+    "min_ms" : 1.0734519958496094,
+    "average_ms" : 1.2084385871887207,
+    "max_ms" : 1.4703099727630615,
+    "count" : 5,
+    "values" : [ 1.092221, 1.259306, 1.47031, 1.073452, 1.146904 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.2039949893951416,
+    "average_ms" : 1.2039949893951416,
+    "max_ms" : 1.2039949893951416,
+    "count" : 1,
+    "values" : [ 1.203995 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.2021089792251587,
+    "average_ms" : 1.2021089792251587,
+    "max_ms" : 1.2021089792251587,
+    "count" : 1,
+    "values" : [ 1.202109 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.2016249895095825,
+    "average_ms" : 1.2016249895095825,
+    "max_ms" : 1.2016249895095825,
+    "count" : 1,
+    "values" : [ 1.201625 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.198030948638916,
+    "average_ms" : 1.198030948638916,
+    "max_ms" : 1.198030948638916,
+    "count" : 1,
+    "values" : [ 1.198031 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=null]",
+    "min_ms" : 0.9954710006713867,
+    "average_ms" : 1.1836765607198079,
+    "max_ms" : 1.4795509576797485,
+    "count" : 9,
+    "values" : [ 1.139173, 1.479551, 1.036573, 0.995471, 1.090538, 1.170885, 1.287048, 1.420469, 1.033381 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=null]",
+    "min_ms" : 1.1039530038833618,
+    "average_ms" : 1.1719104051589966,
+    "max_ms" : 1.3755300045013428,
+    "count" : 5,
+    "values" : [ 1.118373, 1.13287, 1.128826, 1.37553, 1.103953 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.1696829795837402,
+    "average_ms" : 1.1696829795837402,
+    "max_ms" : 1.1696829795837402,
+    "count" : 1,
+    "values" : [ 1.169683 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1441340446472168,
+    "average_ms" : 1.1441340446472168,
+    "max_ms" : 1.1441340446472168,
+    "count" : 1,
+    "values" : [ 1.144134 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.134093999862671,
+    "average_ms" : 1.134093999862671,
+    "max_ms" : 1.134093999862671,
+    "count" : 1,
+    "values" : [ 1.134094 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0813230276107788,
+    "average_ms" : 1.0813230276107788,
+    "max_ms" : 1.0813230276107788,
+    "count" : 1,
+    "values" : [ 1.081323 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.079882025718689,
+    "average_ms" : 1.079882025718689,
+    "max_ms" : 1.079882025718689,
+    "count" : 1,
+    "values" : [ 1.079882 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0724719762802124,
+    "average_ms" : 1.0724719762802124,
+    "max_ms" : 1.0724719762802124,
+    "count" : 1,
+    "values" : [ 1.072472 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.072152018547058,
+    "average_ms" : 1.072152018547058,
+    "max_ms" : 1.072152018547058,
+    "count" : 1,
+    "values" : [ 1.072152 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.0331710577011108,
+    "average_ms" : 1.0331710577011108,
+    "max_ms" : 1.0331710577011108,
+    "count" : 1,
+    "values" : [ 1.033171 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.028272032737732,
+    "average_ms" : 1.028272032737732,
+    "max_ms" : 1.028272032737732,
+    "count" : 1,
+    "values" : [ 1.028272 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0202239751815796,
+    "average_ms" : 1.0202239751815796,
+    "max_ms" : 1.0202239751815796,
+    "count" : 1,
+    "values" : [ 1.020224 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.007891058921814,
+    "average_ms" : 1.007891058921814,
+    "max_ms" : 1.007891058921814,
+    "count" : 1,
+    "values" : [ 1.007891 ]
+  }, {
+    "behaviour" : "Behaviour[uid=audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 0.9776899814605713,
+    "average_ms" : 0.9776899814605713,
+    "max_ms" : 0.9776899814605713,
+    "count" : 1,
+    "values" : [ 0.97769 ]
+  } ]
+}

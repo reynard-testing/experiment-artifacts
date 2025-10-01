@@ -1,0 +1,46 @@
+[ {
+  "point" : "audible-app:GET /users/user1/books/book2#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 73.97228
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-engine:GET /users/user1/books/book2#0",
+  "response" : "{\"url\":\"http://content-delivery-service:5002/users/user1/books/book2\"}",
+  "status" : 200,
+  "durationMs" : 2.714536
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 57.260857
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0",
+  "response" : "{\"license\":\"745c723e03084d27553fb9d4037b08c1\"}",
+  "status" : 200,
+  "durationMs" : 27.958899
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>ownership:GET /users/user1/books/book2#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.922021
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>activation:GET /books/book2#0",
+  "response" : "{\"license\":\"745c723e03084d27553fb9d4037b08c1\"}",
+  "status" : 200,
+  "durationMs" : 2.966759
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audible-download-service:GET /users/user1/books/book2#0>stats:POST /users/user1/books/book2#0",
+  "response" : "",
+  "status" : 201,
+  "durationMs" : 3.169825
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>asset-metadata:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0",
+  "response" : "{\"metadata\":{\"author\":\"J. K. Rowling\",\"chapters\":[{\"id\":1,\"location\":\"0:00:00\",\"title\":\"The Worst...",
+  "status" : 200,
+  "durationMs" : 3.31098
+}, {
+  "point" : "audible-app:GET /users/user1/books/book2#0>content-delivery-service:GET /users/user1/books/book2#0>audio-assets:GET /books/book2/licenses/745c723e03084d27553fb9d4037b08c1#0",
+  "response" : "This is book 2.",
+  "status" : 200,
+  "durationMs" : 7.383084
+} ]

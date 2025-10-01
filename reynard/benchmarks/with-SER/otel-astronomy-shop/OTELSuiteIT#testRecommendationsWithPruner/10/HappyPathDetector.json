@@ -1,0 +1,41 @@
+[ {
+  "point" : "frontend-proxy:GET /api/recommendations#0",
+  "response" : "\u001F�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003���n\u001B7\u0010�_e�W-�6��uj�\u0005����\u0018U\u000EH�\\��Y�D\\�����\u0004\u0001�\u001A����I\nR�e5\rP�jE\u000E93���|��a�L����{o��~}��i�...",
+  "status" : 200,
+  "durationMs" : 43.504875
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+  "response" : "\u001F�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003���n\u001B7\u0010�_e�W-�6��uj�\u0005����\u0018U\u000EH�\\��Y�D\\�����\u0004\u0001�\u001A����I\nR�e5\rP�jE\u000E93���|��a�L����{o��~}��i�...",
+  "status" : 200,
+  "durationMs" : 39.57252
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 24.076124
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.932508
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.7674
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.756243
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.837481
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.005604
+} ]

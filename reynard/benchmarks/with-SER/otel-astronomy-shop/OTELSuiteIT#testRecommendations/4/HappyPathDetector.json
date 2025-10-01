@@ -1,0 +1,41 @@
+[ {
+  "point" : "frontend-proxy:GET /api/recommendations#0",
+  "response" : "\u001F�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003���n\u001B7\u0010�_e����Z���At)\u0014�v\u0012'�\u000B�\t� �Y�Hˈ��\u000E���A��F���K�#o�')ȕ��\r����pș���|���u1)^<{:;8;�=x...",
+  "status" : 200,
+  "durationMs" : 20.909058
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+  "response" : "\u001F�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003���n\u001B7\u0010�_e����Z���At)\u0014�v\u0012'�\u000B�\t� �Y�Hˈ��\u000E���A��F���K�#o�')ȕ��\r����pș���|���u1)^<{:;8;�=x...",
+  "status" : 200,
+  "durationMs" : 17.976849
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 5.71351
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.847298
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.654547
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.697129
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.543906
+}, {
+  "point" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.749699
+} ]

@@ -1,0 +1,222 @@
+{
+  "DynamicReductionPruner" : {
+    "directly_pruned" : {
+      "percentage" : 14.285714285714286,
+      "count" : 2
+    }
+  },
+  "DynamicReductionPruner, UnreachabilityPruner" : {
+    "directly_pruned" : {
+      "percentage" : 228.57142857142858,
+      "count" : 32
+    }
+  },
+  "HappensBeforeNeighbourDetector" : {
+    "exclusions" : {
+      "count" : 4,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "ErrorPropagationDetector" : {
+    "upstream" : {
+      "count" : 16,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(504)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }
+  },
+  "ParentChildDetector" : {
+    "downstream" : {
+      "count" : 3,
+      "list" : [ {
+        "cause_name" : "frontend-proxy:GET /api/shipping#0",
+        "effect_names" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+        "effect_names" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0", "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+        "effect_names" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,1156 @@
+{
+  "stats" : {
+    "failure_modes" : 4,
+    "fault_injection_points" : 4,
+    "redundant_faultloads" : 0,
+    "redundant_fault_points" : 0,
+    "redundant_fault_subsets" : 0,
+    "max_queue_size" : 55,
+    "avg_queue_size" : 25.51851851851852,
+    "visited_nodes" : 136,
+    "pruned_nodes" : 38,
+    "simplified_fault_injection_points" : 4
+  },
+  "details" : {
+    "node_order" : "DEPTH_FIRST_POST_ORDER",
+    "breadth_first" : true,
+    "failure_modes" : [ "HTTP_ERROR(500)", "HTTP_ERROR(502)", "HTTP_ERROR(503)", "HTTP_ERROR(504)" ],
+    "fault_injection_point_names" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1" ],
+    "fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "movies",
+        "signature" : "GET /movies/[uuid]",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 1
+      }, {
+        "destination" : "movies",
+        "signature" : "GET /movies/[uuid]",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 1
+      } ]
+    } ],
+    "simplified_fault_injection_points_names" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0", "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1" ],
+    "simplified_fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "movies",
+        "signature" : "GET /movies/[uuid]",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 1
+      }, {
+        "destination" : "movies",
+        "signature" : "GET /movies/[uuid]",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "users",
+        "signature" : "GET /users/chris_rivers/bookings",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "bookings",
+        "signature" : "GET /bookings/chris_rivers",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 1
+      } ]
+    } ],
+    "queue_size" : [ 7, 14, 21, 28, 35, 41, 48, 55, 54, 53, 52, 51, 50, 48, 23, 19, 18, 16, 15, 11, 10, 8, 7, 3, 2, 0, 0 ]
+  },
+  "implications" : {
+    "downstream" : {
+      "count" : 3,
+      "list" : [ {
+        "cause_name" : "users:GET /users/chris_rivers/bookings#0",
+        "effect_names" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" ]
+      }, {
+        "cause_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "effect_names" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0" ]
+      }, {
+        "cause_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "effect_names" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0" ]
+      } ]
+    },
+    "inclusions" : {
+      "count" : 4,
+      "simplified" : [ {
+        "any_failure_mode" : true,
+        "effect_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "causes_name" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" ]
+      } ],
+      "list" : [ {
+        "effect_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    },
+    "upstream" : {
+      "count" : 24,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "users:GET /users/chris_rivers/bookings#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "visited" : {
+    "in_order" : [ {
+      "index" : 0,
+      "faultload" : [ ]
+    }, {
+      "index" : 1,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 2,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 3,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 4,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 5,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 6,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 7,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 8,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 9,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 10,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 11,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 12,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 13,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 14,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 15,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 16,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 17,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 18,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 19,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 20,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 21,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 22,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 23,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 24,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 25,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 26,
+      "faultload" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    } ]
+  },
+  "tree" : {
+    "index" : 0,
+    "pruned" : false,
+    "node" : [ ],
+    "children" : [ {
+      "index" : 1,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : 8,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 9,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 10,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : 11,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 12,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 13,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 14,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : 2,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : 3,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : 4,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : 5,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : 15,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 16,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 17,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 18,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 6,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : 19,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 20,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 21,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 22,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }, {
+      "index" : 7,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : 23,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1>movies:GET /movies/[uuid]#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 24,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 25,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 26,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,12 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"8,1,8,8,1,8" [label="bookings-primary" color=black]
+	"16,13,40,16,13,40" [label="bookings-secondary" color=black]
+	"8,1,8,8,1,8" -> "16,13,40,16,13,40" [label="+16"]
+	"16,17,44,16,17,44" [label=movies color=black]
+	"8,1,8,8,1,8" -> "16,17,44,16,17,44" [label="+16"]
+	0 -> "8,1,8,8,1,8" [label="+8"]
+	"4,9,12,4,9,12" [label=movies color=black]
+	0 -> "4,9,12,4,9,12" [label="+4"]
+}

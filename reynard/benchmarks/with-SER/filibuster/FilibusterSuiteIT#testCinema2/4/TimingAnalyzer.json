@@ -1,0 +1,123 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0, mode=null]",
+    "min_ms" : 14.498587608337402,
+    "average_ms" : 14.498587608337402,
+    "max_ms" : 14.498587608337402,
+    "count" : 1,
+    "values" : [ 14.498588 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 5.92657995223999,
+    "average_ms" : 9.849584920065743,
+    "max_ms" : 13.498357772827148,
+    "count" : 7,
+    "values" : [ 12.591194, 13.498358, 12.403392, 12.408803, 6.073329, 5.92658, 6.045439 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=null]",
+    "min_ms" : 8.257597923278809,
+    "average_ms" : 8.257597923278809,
+    "max_ms" : 8.257597923278809,
+    "count" : 1,
+    "values" : [ 8.257598 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 6.167665004730225,
+    "average_ms" : 6.279042959213257,
+    "max_ms" : 6.386377811431885,
+    "count" : 4,
+    "values" : [ 6.270156, 6.386378, 6.291973, 6.167665 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=null]",
+    "min_ms" : 2.2709639072418213,
+    "average_ms" : 2.2709639072418213,
+    "max_ms" : 2.2709639072418213,
+    "count" : 1,
+    "values" : [ 2.270964 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0, mode=null]",
+    "min_ms" : 1.3200370073318481,
+    "average_ms" : 1.3200370073318481,
+    "max_ms" : 1.3200370073318481,
+    "count" : 1,
+    "values" : [ 1.320037 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.2623649835586548,
+    "average_ms" : 1.2623649835586548,
+    "max_ms" : 1.2623649835586548,
+    "count" : 1,
+    "values" : [ 1.262365 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.1902600526809692,
+    "average_ms" : 1.1902600526809692,
+    "max_ms" : 1.1902600526809692,
+    "count" : 1,
+    "values" : [ 1.19026 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.183169960975647,
+    "average_ms" : 1.183169960975647,
+    "max_ms" : 1.183169960975647,
+    "count" : 1,
+    "values" : [ 1.18317 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0560940504074097,
+    "average_ms" : 1.1744938748223441,
+    "max_ms" : 1.372501015663147,
+    "count" : 7,
+    "values" : [ 1.256024, 1.105136, 1.056094, 1.372501, 1.177669, 1.126537, 1.127496 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.1120350360870361,
+    "average_ms" : 1.1650540232658386,
+    "max_ms" : 1.2025619745254517,
+    "count" : 4,
+    "values" : [ 1.152289, 1.202562, 1.112035, 1.19333 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1239670515060425,
+    "average_ms" : 1.1239670515060425,
+    "max_ms" : 1.1239670515060425,
+    "count" : 1,
+    "values" : [ 1.123967 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.1027950048446655,
+    "average_ms" : 1.1027950048446655,
+    "max_ms" : 1.1027950048446655,
+    "count" : 1,
+    "values" : [ 1.102795 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=null]",
+    "min_ms" : 1.0902750492095947,
+    "average_ms" : 1.0902750492095947,
+    "max_ms" : 1.0902750492095947,
+    "count" : 1,
+    "values" : [ 1.090275 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.0758960247039795,
+    "average_ms" : 1.0758960247039795,
+    "max_ms" : 1.0758960247039795,
+    "count" : 1,
+    "values" : [ 1.075896 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0, mode=null]",
+    "min_ms" : 1.0682129859924316,
+    "average_ms" : 1.0682129859924316,
+    "max_ms" : 1.0682129859924316,
+    "count" : 1,
+    "values" : [ 1.068213 ]
+  }, {
+    "behaviour" : "Behaviour[uid=users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.0436819791793823,
+    "average_ms" : 1.0436819791793823,
+    "max_ms" : 1.0436819791793823,
+    "count" : 1,
+    "values" : [ 1.043682 ]
+  } ]
+}

@@ -1,0 +1,1797 @@
+{
+  "DynamicReductionPruner" : {
+    "directly_pruned" : {
+      "percentage" : 0.5235602094240838,
+      "count" : 1
+    }
+  },
+  "DynamicReductionPruner, UnreachabilityPruner" : {
+    "directly_pruned" : {
+      "percentage" : 552.8795811518324,
+      "count" : 1056
+    }
+  },
+  "HappensBeforeNeighbourDetector" : {
+    "exclusions" : {
+      "count" : 24,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "ErrorPropagationDetector" : {
+    "upstream" : {
+      "count" : 87,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0",
+          "mode" : null
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "ConditionalPointDetector" : {
+    "inclusions" : {
+      "count" : 8,
+      "simplified" : [ {
+        "any_failure_mode" : true,
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+        "causes_name" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0" ]
+      }, {
+        "any_failure_mode" : true,
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_name" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0" ]
+      } ],
+      "list" : [ {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:POST /write/urls/randomurl#0",
+        "causes_names" : [ {
+          "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }
+  },
+  "ParentChildDetector" : {
+    "downstream" : {
+      "count" : 2,
+      "list" : [ {
+        "cause_name" : "load-balancer:GET /urls/randomurl#0",
+        "effect_names" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0" ]
+      }, {
+        "cause_name" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+        "effect_names" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0", "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0", "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0" ]
+      } ]
+    }
+  }
+}

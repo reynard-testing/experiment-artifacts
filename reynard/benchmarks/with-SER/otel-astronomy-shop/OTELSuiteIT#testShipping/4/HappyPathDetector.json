@@ -1,0 +1,26 @@
+[ {
+  "point" : "frontend-proxy:GET /api/shipping#0",
+  "response" : "{\"currencyCode\":\"USD\",\"units\":68,\"nanos\":900000000}",
+  "status" : 200,
+  "durationMs" : 23.960184
+}, {
+  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+  "response" : "{\"currencyCode\":\"USD\",\"units\":68,\"nanos\":900000000}",
+  "status" : 200,
+  "durationMs" : 21.128248
+}, {
+  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 4.91454
+}, {
+  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0",
+  "response" : "68.9",
+  "status" : 200,
+  "durationMs" : 0.945003
+}, {
+  "point" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 2.779831
+} ]

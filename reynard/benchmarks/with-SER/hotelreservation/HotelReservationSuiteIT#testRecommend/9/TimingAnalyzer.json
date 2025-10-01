@@ -1,0 +1,116 @@
+{
+  "responses" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0, mode=null]",
+    "min_ms" : 7.677223205566406,
+    "average_ms" : 7.677223205566406,
+    "max_ms" : 7.677223205566406,
+    "count" : 1,
+    "values" : [ 7.677223 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 3.433105945587158,
+    "average_ms" : 5.244963377714157,
+    "max_ms" : 7.078847885131836,
+    "count" : 8,
+    "values" : [ 3.433106, 3.774743, 3.825896, 3.94986, 6.821753, 7.078848, 6.234868, 6.840633 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=null]",
+    "min_ms" : 1.081078052520752,
+    "average_ms" : 1.081078052520752,
+    "max_ms" : 1.081078052520752,
+    "count" : 1,
+    "values" : [ 1.081078 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=null]",
+    "min_ms" : 0.503292977809906,
+    "average_ms" : 0.5918632030487061,
+    "max_ms" : 0.7152780294418335,
+    "count" : 5,
+    "values" : [ 0.533534, 0.503293, 0.715278, 0.544895, 0.662316 ]
+  } ],
+  "overhead" : [ {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0, mode=null]",
+    "min_ms" : 1.2990939617156982,
+    "average_ms" : 1.2990939617156982,
+    "max_ms" : 1.2990939617156982,
+    "count" : 1,
+    "values" : [ 1.299094 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 1.2900129556655884,
+    "average_ms" : 1.2900129556655884,
+    "max_ms" : 1.2900129556655884,
+    "count" : 1,
+    "values" : [ 1.290013 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.2443410158157349,
+    "average_ms" : 1.2443410158157349,
+    "max_ms" : 1.2443410158157349,
+    "count" : 1,
+    "values" : [ 1.244341 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.2304010391235352,
+    "average_ms" : 1.2304010391235352,
+    "max_ms" : 1.2304010391235352,
+    "count" : 1,
+    "values" : [ 1.230401 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.1048649549484253,
+    "average_ms" : 1.221508115530014,
+    "max_ms" : 1.369217038154602,
+    "count" : 8,
+    "values" : [ 1.221661, 1.312155, 1.119213, 1.369217, 1.18882, 1.178031, 1.104865, 1.278103 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(502)]",
+    "min_ms" : 1.1931099891662598,
+    "average_ms" : 1.1931099891662598,
+    "max_ms" : 1.1931099891662598,
+    "count" : 1,
+    "values" : [ 1.19311 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=null]",
+    "min_ms" : 1.1921639442443848,
+    "average_ms" : 1.1921639442443848,
+    "max_ms" : 1.1921639442443848,
+    "count" : 1,
+    "values" : [ 1.192164 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 1.146378993988037,
+    "average_ms" : 1.146378993988037,
+    "max_ms" : 1.146378993988037,
+    "count" : 1,
+    "values" : [ 1.146379 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=null]",
+    "min_ms" : 1.0378659963607788,
+    "average_ms" : 1.0894116163253784,
+    "max_ms" : 1.1691590547561646,
+    "count" : 5,
+    "values" : [ 1.048087, 1.098148, 1.093798, 1.037866, 1.169159 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=HTTP_ERROR(503)]",
+    "min_ms" : 1.0713779926300049,
+    "average_ms" : 1.0713779926300049,
+    "max_ms" : 1.0713779926300049,
+    "count" : 1,
+    "values" : [ 1.071378 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0, mode=HTTP_ERROR(504)]",
+    "min_ms" : 0.9947249889373779,
+    "average_ms" : 0.9947249889373779,
+    "max_ms" : 0.9947249889373779,
+    "count" : 1,
+    "values" : [ 0.994725 ]
+  }, {
+    "behaviour" : "Behaviour[uid=frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0, mode=HTTP_ERROR(500)]",
+    "min_ms" : 0.993336021900177,
+    "average_ms" : 0.993336021900177,
+    "max_ms" : 0.993336021900177,
+    "count" : 1,
+    "values" : [ 0.993336 ]
+  } ]
+}

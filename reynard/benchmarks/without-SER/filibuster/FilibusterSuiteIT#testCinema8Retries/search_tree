@@ -1,0 +1,8 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,7,4,1,7" [label=monolith color=black]
+	0 -> "4,1,7,4,1,7" [label="+4"]
+	"4,2,8,4,2,8" [label="monolith#∞" color=black]
+	0 -> "4,2,8,4,2,8" [label="+4"]
+}

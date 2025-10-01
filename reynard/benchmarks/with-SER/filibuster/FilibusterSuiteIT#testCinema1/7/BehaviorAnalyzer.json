@@ -1,0 +1,22 @@
+{
+  "max_arity" : {
+    "users:GET /users/chris_rivers/bookings#0" : 1,
+    "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" : 1
+  },
+  "failures" : [ {
+    "uid" : "users:GET /users/chris_rivers/bookings#0",
+    "mode" : "HTTP_ERROR(503)",
+    "causes" : [ {
+      "causes" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0" ],
+      "all_modes" : true
+    } ]
+  }, {
+    "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+    "mode" : "HTTP_ERROR(503)",
+    "causes" : [ {
+      "causes" : [ "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0>movies:GET /movies/[uuid]#0" ],
+      "all_modes" : true
+    } ]
+  } ],
+  "resiliency" : [ ]
+}

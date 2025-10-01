@@ -1,0 +1,3252 @@
+{
+  "stats" : {
+    "failure_modes" : 4,
+    "fault_injection_points" : 7,
+    "redundant_faultloads" : 0,
+    "redundant_fault_points" : 0,
+    "redundant_fault_subsets" : 0,
+    "max_queue_size" : 259,
+    "avg_queue_size" : 129.93548387096774,
+    "visited_nodes" : 412,
+    "pruned_nodes" : 258,
+    "simplified_fault_injection_points" : 7
+  },
+  "details" : {
+    "node_order" : "DEPTH_FIRST_POST_ORDER",
+    "breadth_first" : true,
+    "failure_modes" : [ "HTTP_ERROR(500)", "HTTP_ERROR(502)", "HTTP_ERROR(503)", "HTTP_ERROR(504)" ],
+    "fault_injection_point_names" : [ "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0" ],
+    "fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "recommendation",
+        "signature" : "oteldemo.RecommendationService/ListRecommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/ListProducts",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "recommendation",
+        "signature" : "oteldemo.RecommendationService/ListRecommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 1
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 2
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 3
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "simplified_fault_injection_points_names" : [ "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0" ],
+    "simplified_fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "recommendation",
+        "signature" : "oteldemo.RecommendationService/ListRecommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/ListProducts",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "recommendation",
+        "signature" : "oteldemo.RecommendationService/ListRecommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 1
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 2
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "product-catalog",
+        "signature" : "oteldemo.ProductCatalogService/GetProduct",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 3
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "frontend-proxy",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "frontend",
+        "signature" : "GET /api/recommendations",
+        "payload" : null,
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "queue_size" : [ 31, 38, 45, 52, 59, 58, 57, 56, 55, 54, 53, 51, 70, 89, 108, 127, 142, 157, 172, 187, 198, 209, 220, 231, 238, 245, 252, 259, 258, 257, 0 ]
+  },
+  "implications" : {
+    "downstream" : {
+      "count" : 3,
+      "list" : [ {
+        "cause_name" : "frontend-proxy:GET /api/recommendations#0",
+        "effect_names" : [ "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "effect_names" : [ "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2", "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "effect_names" : [ "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0" ]
+      } ]
+    },
+    "exclusions" : {
+      "count" : 16,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    },
+    "upstream" : {
+      "count" : 32,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      } ]
+    }
+  },
+  "visited" : {
+    "in_order" : [ {
+      "index" : 0,
+      "faultload" : [ ]
+    }, {
+      "index" : 1,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 2,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 3,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 4,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 5,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 6,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 7,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 8,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 9,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 10,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 11,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 12,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 13,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 14,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 15,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 16,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 17,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 18,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 19,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 20,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 21,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 22,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 23,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 24,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 25,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 26,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 27,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 28,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 29,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 30,
+      "faultload" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    } ]
+  },
+  "tree" : {
+    "index" : 0,
+    "pruned" : false,
+    "node" : [ ],
+    "children" : [ {
+      "index" : 5,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 6,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 7,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 8,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 9,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 10,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 11,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 12,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 13,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 14,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 15,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 16,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 17,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 18,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 19,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 20,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 21,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 22,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 23,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      } ]
+    }, {
+      "index" : 24,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 25,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 26,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 27,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 28,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 29,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 30,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : -1,
+      "pruned" : true,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 4,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 3,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 2,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 1,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#1",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#2",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>product-catalog:oteldemo.ProductCatalogService/GetProduct#3",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0>product-catalog:oteldemo.ProductCatalogService/ListProducts#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : -1,
+        "pruned" : true,
+        "node" : [ {
+          "uid" : "frontend-proxy:GET /api/recommendations#0>frontend:GET /api/recommendations#0>recommendation:oteldemo.RecommendationService/ListRecommendations#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    } ]
+  }
+}

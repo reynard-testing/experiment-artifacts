@@ -1,5 +1,0 @@
-{
-  "review-ml" : [ 200 ],
-  "api-gateway" : [ 200, 503 ],
-  "review-time" : [ 200 ]
-}

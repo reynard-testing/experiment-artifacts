@@ -1,6 +1,0 @@
-{
-  "movies" : [ 200 ],
-  "bookings-primary" : [ 200 ],
-  "bookings-secondary" : [ 200 ],
-  "users" : [ 200, 503 ]
-}

@@ -1,0 +1,24 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	fbd9ea5ab4a067cd57bef4358f02fdc14049705054a14039379c05d733158bc4 [label="frontend-proxy"]
+	fbd9ea5ab4a067cd57bef4358f02fdc14049705054a14039379c05d733158bc4_rel [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	fbd9ea5ab4a067cd57bef4358f02fdc14049705054a14039379c05d733158bc4_rel -> fbd9ea5ab4a067cd57bef4358f02fdc14049705054a14039379c05d733158bc4 [label="/shipping #0" color=black]
+	"75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea" [label=frontend]
+	"75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea_rel" -> "75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea" [label="/shipping #0" color=black]
+	"215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac" [label=shipping]
+	"215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac_rel" -> "215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac" [label="/GetQuote #0" color=black]
+	"2999cd2b5d85eee200bf3b73590927881c4127f2d30ba0993b13974d10c9e354" [label=quote]
+	"2999cd2b5d85eee200bf3b73590927881c4127f2d30ba0993b13974d10c9e354_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"2999cd2b5d85eee200bf3b73590927881c4127f2d30ba0993b13974d10c9e354_rel" -> "2999cd2b5d85eee200bf3b73590927881c4127f2d30ba0993b13974d10c9e354" [label="/getquote #0" color=black]
+	"215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac" -> "2999cd2b5d85eee200bf3b73590927881c4127f2d30ba0993b13974d10c9e354_rel" [arrowhead=none]
+	"384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07" [label=currency]
+	"384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07_rel" -> "384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07" [label="/Convert #0" color=black]
+	"75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea" -> "215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac_rel" [arrowhead=none]
+	"75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea" -> "384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07_rel" [arrowhead=none]
+	"215930eecb5d5fb5915300d171490d4c6422288f6da20d383262a0be3fb187ac_rel" -> "384ea7a1161baa8f518ca54aa468b086447fd779b94af06deff5c20971109b07_rel" [color=gray constraint=false style=dashed]
+	fbd9ea5ab4a067cd57bef4358f02fdc14049705054a14039379c05d733158bc4 -> "75603cb863b0fb9229f8fed693a2219afd36682c30e84cc033176d0c703139ea_rel" [arrowhead=none]
+}

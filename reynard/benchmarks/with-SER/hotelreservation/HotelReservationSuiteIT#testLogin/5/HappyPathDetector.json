@@ -1,0 +1,11 @@
+[ {
+  "point" : "frontend:GET /user#0",
+  "response" : "5CEFBF73D0D9778824F8C11986BA6CC036332660C33DA3826B34E7738316E4A1",
+  "status" : 200,
+  "durationMs" : 5.089631
+}, {
+  "point" : "frontend:GET /user#0>user:user.User/CheckUser#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.644097
+} ]

@@ -1,0 +1,1569 @@
+{
+  "DynamicReductionPruner" : {
+    "directly_pruned" : {
+      "count" : 100,
+      "percentage" : 156.25
+    }
+  },
+  "DynamicReductionPruner, UnreachabilityPruner" : {
+    "directly_pruned" : {
+      "count" : 1332,
+      "percentage" : 2081.25
+    }
+  },
+  "HappensBeforeNeighbourDetector" : {
+    "exclusions" : {
+      "count" : 144,
+      "simplified" : [ ],
+      "list" : [ {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }
+  },
+  "ErrorPropagationDetector" : {
+    "upstream" : {
+      "count" : 44,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0>quote:POST /getquote{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0>quote:POST /getquote{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0>quote:POST /getquote{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0>quote:POST /getquote{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(500)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+          "mode" : null
+        }, {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        },
+        "causes_names" : [ {
+          "uid" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    }
+  },
+  "ParentChildDetector" : {
+    "downstream" : {
+      "count" : 4,
+      "list" : [ {
+        "cause_name" : "frontend-proxy:POST /api/checkout{}#0",
+        "effect_names" : [ "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0",
+        "effect_names" : [ "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{checkout:oteldemo.CheckoutService/PlaceOrder:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0",
+        "effect_names" : [ "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/ShipOrder{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/GetCart{}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>cart:oteldemo.CartService/EmptyCart{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>product-catalog:oteldemo.ProductCatalogService/GetProduct{cart:oteldemo.CartService/GetCart:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>payment:oteldemo.PaymentService/Charge{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>currency:oteldemo.CurrencyService/Convert{cart:oteldemo.CartService/GetCart:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0}#0", "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>email:POST /send_order_confirmation{cart:oteldemo.CartService/EmptyCart:0,cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,payment:oteldemo.PaymentService/Charge:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0,shipping:oteldemo.ShippingService/GetQuote:0,shipping:oteldemo.ShippingService/ShipOrder:0}#0" ]
+      }, {
+        "cause_name" : "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0",
+        "effect_names" : [ "frontend-proxy:POST /api/checkout{}#0>frontend:POST /api/checkout{}#0>checkout:oteldemo.CheckoutService/PlaceOrder{}#0>shipping:oteldemo.ShippingService/GetQuote{cart:oteldemo.CartService/GetCart:0,currency:oteldemo.CurrencyService/Convert:0,product-catalog:oteldemo.ProductCatalogService/GetProduct:0}#0>quote:POST /getquote{}#0" ]
+      } ]
+    }
+  }
+}

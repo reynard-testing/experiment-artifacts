@@ -1,0 +1,15 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b [label=users]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b_rel [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b_rel -> bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b [label="/bookings #0" color=black]
+	"575c71eb9aacaf1ef0d4ea5fe81f4615e94779bdbd4700b625fdab89236a05eb" [label=bookings]
+	"575c71eb9aacaf1ef0d4ea5fe81f4615e94779bdbd4700b625fdab89236a05eb_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"575c71eb9aacaf1ef0d4ea5fe81f4615e94779bdbd4700b625fdab89236a05eb_rel" -> "575c71eb9aacaf1ef0d4ea5fe81f4615e94779bdbd4700b625fdab89236a05eb" [label="/chris_rivers #0" color=black]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f" [label=movies]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f" [label="/[uuid] #0" color=black]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> "575c71eb9aacaf1ef0d4ea5fe81f4615e94779bdbd4700b625fdab89236a05eb_rel" [arrowhead=none]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [arrowhead=none]
+}

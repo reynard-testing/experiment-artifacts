@@ -1,0 +1,8 @@
+{
+  "faultspace_size" : 244140624,
+  "complete_space_size" : 244140625,
+  "total_generated" : 1860,
+  "prune_invocations" : 7360,
+  "total_run" : 1861,
+  "cases_run" : 1860
+}

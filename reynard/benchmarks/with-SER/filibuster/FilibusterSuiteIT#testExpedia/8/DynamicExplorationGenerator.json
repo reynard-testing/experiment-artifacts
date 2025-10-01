@@ -1,0 +1,642 @@
+{
+  "stats" : {
+    "failure_modes" : 4,
+    "fault_injection_points" : 2,
+    "redundant_faultloads" : 0,
+    "redundant_fault_points" : 0,
+    "redundant_fault_subsets" : 0,
+    "max_queue_size" : 15,
+    "avg_queue_size" : 7.142857142857143,
+    "visited_nodes" : 20,
+    "pruned_nodes" : 0,
+    "simplified_fault_injection_points" : 2
+  },
+  "details" : {
+    "node_order" : "DEPTH_FIRST_POST_ORDER",
+    "breadth_first" : true,
+    "failure_modes" : [ "HTTP_ERROR(500)", "HTTP_ERROR(502)", "HTTP_ERROR(503)", "HTTP_ERROR(504)" ],
+    "fault_injection_point_names" : [ "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0", "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0" ],
+    "fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "api-gateway",
+        "signature" : "GET /review/hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "review-ml",
+        "signature" : "GET /hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "api-gateway",
+        "signature" : "GET /review/hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "review-time",
+        "signature" : "GET /hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "simplified_fault_injection_points_names" : [ "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0", "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0" ],
+    "simplified_fault_injection_points" : [ {
+      "stack" : [ {
+        "destination" : "api-gateway",
+        "signature" : "GET /review/hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "review-ml",
+        "signature" : "GET /hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    }, {
+      "stack" : [ {
+        "destination" : "api-gateway",
+        "signature" : "GET /review/hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      }, {
+        "destination" : "review-time",
+        "signature" : "GET /hotels/hotel1",
+        "payload" : "",
+        "predecessors" : null,
+        "count" : 0
+      } ]
+    } ],
+    "queue_size" : [ 3, 6, 9, 12, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0 ]
+  },
+  "implications" : {
+    "downstream" : {
+      "count" : 1,
+      "list" : [ {
+        "cause_name" : "api-gateway:GET /review/hotels/hotel1#0",
+        "effect_names" : [ "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0" ]
+      } ]
+    },
+    "inclusions" : {
+      "count" : 4,
+      "simplified" : [ {
+        "any_failure_mode" : true,
+        "effect_name" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "causes_name" : [ "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0" ]
+      } ],
+      "list" : [ {
+        "effect_name" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      } ]
+    },
+    "upstream" : {
+      "count" : 16,
+      "list" : [ {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "effect_name" : {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        },
+        "causes_names" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        }, {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }
+  },
+  "visited" : {
+    "in_order" : [ {
+      "index" : 0,
+      "faultload" : [ ]
+    }, {
+      "index" : 1,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 2,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 3,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 4,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 5,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 6,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 7,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 8,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 9,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 10,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 11,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 12,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 13,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 14,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 15,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 16,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    }, {
+      "index" : 17,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ]
+    }, {
+      "index" : 18,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ]
+    }, {
+      "index" : 19,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ]
+    }, {
+      "index" : 20,
+      "faultload" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      }, {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ]
+    } ]
+  },
+  "tree" : {
+    "index" : 0,
+    "pruned" : false,
+    "node" : [ ],
+    "children" : [ {
+      "index" : 1,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(503)"
+      } ],
+      "children" : [ {
+        "index" : 5,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 6,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 7,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 8,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 2,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(502)"
+      } ],
+      "children" : [ {
+        "index" : 9,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 10,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 11,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 12,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 3,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(500)"
+      } ],
+      "children" : [ {
+        "index" : 13,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 14,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 15,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 16,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    }, {
+      "index" : 4,
+      "pruned" : false,
+      "node" : [ {
+        "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-ml:GET /hotels/hotel1#0",
+        "mode" : "HTTP_ERROR(504)"
+      } ],
+      "children" : [ {
+        "index" : 17,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(503)"
+        } ]
+      }, {
+        "index" : 18,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(502)"
+        } ]
+      }, {
+        "index" : 19,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(504)"
+        } ]
+      }, {
+        "index" : 20,
+        "pruned" : false,
+        "node" : [ {
+          "uid" : "api-gateway:GET /review/hotels/hotel1#0>review-time:GET /hotels/hotel1#0",
+          "mode" : "HTTP_ERROR(500)"
+        } ]
+      } ]
+    } ]
+  }
+}

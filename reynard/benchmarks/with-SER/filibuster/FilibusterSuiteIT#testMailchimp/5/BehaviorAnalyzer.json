@@ -1,0 +1,42 @@
+{
+  "max_arity" : {
+    "load-balancer:GET /urls/randomurl#0" : 1,
+    "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0" : 5
+  },
+  "failures" : [ {
+    "uid" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>requestmapper:GET /urls/randomurl#0" ],
+      "all_modes" : true
+    }, {
+      "causes" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0", "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-secondary:GET /read#0" ],
+      "all_modes" : true
+    } ]
+  }, {
+    "uid" : "load-balancer:GET /urls/randomurl#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "Fault[uid=load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0, mode=HTTP_ERROR(503)]" ]
+    }, {
+      "causes" : [ "Fault[uid=load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0, mode=HTTP_ERROR(502)]" ]
+    }, {
+      "causes" : [ "Fault[uid=load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0, mode=HTTP_ERROR(504)]" ]
+    } ]
+  } ],
+  "resiliency" : [ {
+    "point" : "load-balancer:GET /urls/randomurl#0",
+    "redundancies" : [ {
+      "redundancy" : [ "Fault[uid=load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0, mode=HTTP_ERROR(500)]" ]
+    } ]
+  }, {
+    "point" : "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0",
+    "redundancies" : [ {
+      "redundancy" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:GET /read#0" ],
+      "all_modes" : true
+    }, {
+      "redundancy" : [ "load-balancer:GET /urls/randomurl#0>app-server:GET /urls/randomurl#0>db-primary:POST /write/urls/randomurl#0" ],
+      "all_modes" : true
+    } ]
+  } ]
+}

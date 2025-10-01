@@ -1,0 +1,16 @@
+[ {
+  "point" : "users:GET /users/chris_rivers/bookings#0",
+  "response" : "{\"20151201\":[{\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}]}",
+  "status" : 200,
+  "durationMs" : 14.600851
+}, {
+  "point" : "users:GET /users/chris_rivers/bookings#0>bookings-primary:GET /bookings/chris_rivers#0",
+  "response" : "{\"20151201\":[\"267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"]}",
+  "status" : 200,
+  "durationMs" : 2.277523
+}, {
+  "point" : "users:GET /users/chris_rivers/bookings#0>movies:GET /movies/[uuid]#0",
+  "response" : "{\"director\":\"Ryan Coogler\",\"id\":\"267eedb8-0f5d-42d5-8f43-72426b9fb3e6\",\"rating\":8.8,\"title\":\"Creed\",\"uri\":\"/movies/267eedb8-0f5d-42d5-8f43-72426b9fb3e6\"}",
+  "status" : 200,
+  "durationMs" : 2.297663
+} ]

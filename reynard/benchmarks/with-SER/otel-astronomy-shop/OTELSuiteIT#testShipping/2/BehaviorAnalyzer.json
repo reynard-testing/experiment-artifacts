@@ -1,0 +1,50 @@
+{
+  "max_arity" : {
+    "frontend-proxy:GET /api/shipping#0" : 1,
+    "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0" : 2,
+    "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0" : 1
+  },
+  "failures" : [ {
+    "uid" : "frontend-proxy:GET /api/shipping#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "Fault[uid=frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(500)]" ]
+    } ]
+  }, {
+    "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0" ],
+      "all_modes" : true
+    }, {
+      "causes" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>currency:oteldemo.CurrencyService/Convert#0" ],
+      "all_modes" : true
+    } ]
+  }, {
+    "uid" : "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0",
+    "mode" : "HTTP_ERROR(500)",
+    "causes" : [ {
+      "causes" : [ "frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0>shipping:oteldemo.ShippingService/GetQuote#0>quote:POST /getquote#0" ],
+      "all_modes" : true
+    } ]
+  }, {
+    "uid" : "frontend-proxy:GET /api/shipping#0",
+    "mode" : "HTTP_ERROR(502)",
+    "causes" : [ {
+      "causes" : [ "Fault[uid=frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(502)]" ]
+    } ]
+  }, {
+    "uid" : "frontend-proxy:GET /api/shipping#0",
+    "mode" : "HTTP_ERROR(503)",
+    "causes" : [ {
+      "causes" : [ "Fault[uid=frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(503)]" ]
+    } ]
+  }, {
+    "uid" : "frontend-proxy:GET /api/shipping#0",
+    "mode" : "HTTP_ERROR(504)",
+    "causes" : [ {
+      "causes" : [ "Fault[uid=frontend-proxy:GET /api/shipping#0>frontend:GET /api/shipping#0, mode=HTTP_ERROR(504)]" ]
+    } ]
+  } ],
+  "resiliency" : [ ]
+}

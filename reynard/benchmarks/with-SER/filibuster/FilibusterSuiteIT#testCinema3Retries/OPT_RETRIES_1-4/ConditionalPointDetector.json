@@ -1,0 +1,9 @@
+[ {
+  "uid" : "users:GET /users/chris_rivers/bookings#0>bookings:GET /bookings/chris_rivers#0",
+  "modes" : {
+    "HTTP_ERROR(503)" : 1,
+    "HTTP_ERROR(504)" : 1,
+    "HTTP_ERROR(500)" : 1,
+    "HTTP_ERROR(502)" : 1
+  }
+} ]

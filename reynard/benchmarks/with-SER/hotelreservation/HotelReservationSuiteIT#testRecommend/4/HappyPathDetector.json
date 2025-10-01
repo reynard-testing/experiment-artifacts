@@ -1,0 +1,16 @@
+[ {
+  "point" : "frontend:GET /recommendations#0",
+  "response" : "5E143B8EFFA0FF6A1B22CB1D16901165A3393E4EF878066EB4CE6749B0AE641B",
+  "status" : 200,
+  "durationMs" : 8.215516
+}, {
+  "point" : "frontend:GET /recommendations#0>recommendation:recommendation.Recommendation/GetRecommendations#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 0.512964
+}, {
+  "point" : "frontend:GET /recommendations#0>profile:profile.Profile/GetProfiles#0",
+  "response" : "",
+  "status" : 200,
+  "durationMs" : 1.114558
+} ]

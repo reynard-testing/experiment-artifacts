@@ -1,0 +1,21 @@
+[ {
+  "point" : "controller:POST /v1/faultload/register(4a63c0df)#0",
+  "response" : "OK",
+  "status" : 200,
+  "durationMs" : 49.824795
+}, {
+  "point" : "controller:POST /v1/faultload/register(4a63c0df)#0>proxy3:POST /v1/faultload/register(4a63c0df)#0",
+  "response" : "OK",
+  "status" : 200,
+  "durationMs" : 34.57188
+}, {
+  "point" : "controller:POST /v1/faultload/register(4a63c0df)#0>proxy2:POST /v1/faultload/register(4a63c0df)#0",
+  "response" : "OK",
+  "status" : 200,
+  "durationMs" : 34.298244
+}, {
+  "point" : "controller:POST /v1/faultload/register(4a63c0df)#0>proxy1:POST /v1/faultload/register(4a63c0df)#0",
+  "response" : "OK",
+  "status" : 200,
+  "durationMs" : 33.172737
+} ]

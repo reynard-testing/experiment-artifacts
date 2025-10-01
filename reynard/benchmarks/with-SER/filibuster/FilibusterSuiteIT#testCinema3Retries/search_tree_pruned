@@ -1,0 +1,24 @@
+// Faultspace Search with pruned
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,5,4,1,5" [label=movies color=black]
+	"4,12,15,16,-95443,15" [label="bookings#1>
+movies" color=black]
+	"0,0,0,16,-95407,-95392" [label="bookings#∞" color=red]
+	"4,12,15,16,-95443,15" -> "0,0,0,16,-95407,-95392" [label=-16]
+	"4,1,5,4,1,5" -> "4,12,15,16,-95443,15" [label="+4"]
+	"0,0,0,16,-95447,-95408" [label="bookings#1" color=red]
+	"4,1,5,4,1,5" -> "0,0,0,16,-95447,-95408" [label=-16]
+	"0,0,0,12,-95439,-95412" [label="bookings#∞" color=red]
+	"4,1,5,4,1,5" -> "0,0,0,12,-95439,-95412" [label=-12]
+	0 -> "4,1,5,4,1,5" [label="+4"]
+	"4,2,11,4,2,11" [label="bookings#∞" color=black]
+	0 -> "4,2,11,4,2,11" [label="+4"]
+	"3,6,10,4,-95455,10" [label=bookings color=black]
+	"3,16,18,12,-95465,18" [label="bookings#1>
+movies" color=black]
+	"3,6,10,4,-95455,10" -> "3,16,18,12,-95465,18" [label="+3"]
+	"0,0,0,12,-95469,-95451" [label="bookings#1" color=red]
+	"3,6,10,4,-95455,10" -> "0,0,0,12,-95469,-95451" [label=-12]
+	0 -> "3,6,10,4,-95455,10" [label="+3"]
+}
