@@ -1,9 +1,0 @@
-// Call graph with dependencies
-digraph {
-	rankdir=LR
-	"1-/bookings-users" [label=users]
-	"2-/chris_rivers-bookings" [label=bookings]
-	"3-/[uuid]-movies" [label=movies]
-	"2-/chris_rivers-bookings" -> "3-/[uuid]-movies" [label="#0"]
-	"1-/bookings-users" -> "2-/chris_rivers-bookings" [label="#0"]
-}
