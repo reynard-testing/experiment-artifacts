@@ -1,6 +1,6 @@
 # Reynard Experiment Artifacts
 
-This repository contains the raw data used to generate the results.
+This repository contains the raw data used to generate the results, as well as files generated based on the raw data using the scripts available in the [main repository](https://github.com/reynard-testing/reynard).
 
 ## File structure
 
@@ -17,3 +17,7 @@ This repository contains the raw data used to generate the results.
     - `/with[out]-SER` - Similar to the filibuster results, either with or without SER enabled.
       - `<benchmark-system>/<test-case>/` contains the processed results that process all iterations. The seperate results per iteration can be found in the number subdirectories and corresponding json files.
   - `/overhead` - Benchmark for measuring the overhead
+    - `<scenario>/` - Specific scenarios as [detailed here](https://github.com/reynard-testing/reynard/tree/main/util/experiments/overhead).
+      - `default<x>` - An iteration of each benchmark
+      - `<x>.out` Collected values from each iteration
+      - `<x>.avg` Averages of the values collected in the `.out` files
