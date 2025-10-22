@@ -1,0 +1,18 @@
+// Faultspace Search with pruned
+digraph {
+	0 [label="&empty;" color=black]
+	"8,1,8,8,1,8" [label="bookings-primary" color=black]
+	"16,13,40,16,13,40" [label="bookings-secondary" color=black]
+	"8,1,8,8,1,8" -> "16,13,40,16,13,40" [label="+16"]
+	"16,17,44,16,17,44" [label=movies color=black]
+	"0,0,0,64,-110848,-110785" [label="bookings-secondary" color=red]
+	"16,17,44,16,17,44" -> "0,0,0,64,-110848,-110785" [label=-64]
+	"8,1,8,8,1,8" -> "16,17,44,16,17,44" [label="+16"]
+	"0,0,0,16,-110864,-110849" [label="bookings-primary" color=red]
+	"8,1,8,8,1,8" -> "0,0,0,16,-110864,-110849" [label=-16]
+	0 -> "8,1,8,8,1,8" [label="+8"]
+	"4,9,12,4,9,12" [label=movies color=black]
+	"0,0,0,16,-110880,-110865" [label="bookings-primary" color=red]
+	"4,9,12,4,9,12" -> "0,0,0,16,-110880,-110865" [label=-16]
+	0 -> "4,9,12,4,9,12" [label="+4"]
+}

@@ -1,0 +1,19 @@
+// Call graph
+digraph {
+	rankdir=LR
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e" [label=controller]
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e_rel" -> "58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e" [label="/register #0" color=black]
+	bbf13209b5bc5185829981b6f89822efee44038408d963b6308c16d13b4e0445 [label=proxy2]
+	bbf13209b5bc5185829981b6f89822efee44038408d963b6308c16d13b4e0445_rel [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	bbf13209b5bc5185829981b6f89822efee44038408d963b6308c16d13b4e0445_rel -> bbf13209b5bc5185829981b6f89822efee44038408d963b6308c16d13b4e0445 [label="/register #0" color=black]
+	"062455cba7de094ee4aa399da8aad07b39e23c8ab07ef8c9fbcdb84b137e70df" [label=proxy1]
+	"062455cba7de094ee4aa399da8aad07b39e23c8ab07ef8c9fbcdb84b137e70df_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"062455cba7de094ee4aa399da8aad07b39e23c8ab07ef8c9fbcdb84b137e70df_rel" -> "062455cba7de094ee4aa399da8aad07b39e23c8ab07ef8c9fbcdb84b137e70df" [label="/register #0" color=black]
+	"3e0a4c46f9a5a591bfe45bc6ddafc1ea487281b612444fca8a3d48482a808470" [label=proxy3]
+	"3e0a4c46f9a5a591bfe45bc6ddafc1ea487281b612444fca8a3d48482a808470_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"3e0a4c46f9a5a591bfe45bc6ddafc1ea487281b612444fca8a3d48482a808470_rel" -> "3e0a4c46f9a5a591bfe45bc6ddafc1ea487281b612444fca8a3d48482a808470" [label="/register #0" color=black]
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e" -> bbf13209b5bc5185829981b6f89822efee44038408d963b6308c16d13b4e0445_rel [arrowhead=none]
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e" -> "062455cba7de094ee4aa399da8aad07b39e23c8ab07ef8c9fbcdb84b137e70df_rel" [arrowhead=none]
+	"58bc1f47dbbc46d43d183f3bc39a972bd1fabc83bf316c8ed447fa00e8405f0e" -> "3e0a4c46f9a5a591bfe45bc6ddafc1ea487281b612444fca8a3d48482a808470_rel" [arrowhead=none]
+}

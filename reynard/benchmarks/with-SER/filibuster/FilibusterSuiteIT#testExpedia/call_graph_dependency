@@ -1,0 +1,16 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	"5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527" [label="api-gateway"]
+	"5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527_rel" -> "5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527" [label="/hotel1 #0" color=black]
+	"79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99" [label="review-ml"]
+	"79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99_rel" [label="" color=red fixedsize=true height=0.25 shape=diamond width=0.25]
+	"79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99_rel" -> "79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99" [label="/hotel1 #0" color=black]
+	"2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6" [label="review-time"]
+	"2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6_rel" -> "2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6" [label="/hotel1 #0" color=red]
+	"5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527" -> "79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99_rel" [arrowhead=none]
+	"5c72aa3cff0518299bb35db3b96160186d031bce8ccf8bc0648e8fc478aaf527" -> "2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6_rel" [arrowhead=none style=invis]
+	"79bc2d90e8e04506cb76b31cc34598fdbf72bc0649f891f1b7a7504e7ecf7b99_rel" -> "2b32439512f2e8df4dad7b8fd725a8d9b8fea8a78bcd7e9fea26323fde8dcbf6_rel" [color=red constraint=false]
+}

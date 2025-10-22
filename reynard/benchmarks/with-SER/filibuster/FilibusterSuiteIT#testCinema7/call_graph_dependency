@@ -1,0 +1,27 @@
+// Call graph with dependencies
+digraph {
+	rankdir=LR
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b [label=users]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b_rel [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b_rel -> bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b [label="/bookings #0" color=black]
+	"6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4" [label="bookings-primary"]
+	"6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4_rel" [label="" color=red fixedsize=true height=0.25 shape=diamond width=0.25]
+	"6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4_rel" -> "6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4" [label="/health-check #0" color=black]
+	a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504 [label="bookings-primary"]
+	a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504_rel [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504_rel -> a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504 [label="/chris_rivers #0" color=black]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f" [label=movies]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f" [label="/[uuid] #0" color=black]
+	"9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9" [label="bookings-secondary"]
+	"9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9_rel" [label="" fillcolor=red fixedsize=true shape=point style=filled width=0]
+	"9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9_rel" -> "9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9" [label="/chris_rivers #0" color=red]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> "6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4_rel" [arrowhead=none]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504_rel [arrowhead=none]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [arrowhead=none]
+	bc28ed524d6eb25249e0d71901c202fd32e5f4f60e5fa5c54b579e9bbf9f404b -> "9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9_rel" [arrowhead=none style=invis]
+	"6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4_rel" -> a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504_rel [color=gray constraint=false style=dashed]
+	"9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9_rel" -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [color=gray constraint=false style=dashed]
+	a8b9a97178ce833c9633e0fc30be25a6317a341baf4363e297bbb805bad6d504_rel -> "85f1300f52edf73c3541ad0232ae7e1194ae45f8332d34688a7ebceddf65145f_rel" [color=gray constraint=false style=dashed]
+	"6fb7335dfb2f1813ea19ec6b60cedd636ea82c896b6d7e8771b987d0128b52c4_rel" -> "9ae7c8b57f73a353eddeaa2f1c56e621227778ec2482cafe7311d7e8cd23b9f9_rel" [color=red constraint=false]
+}

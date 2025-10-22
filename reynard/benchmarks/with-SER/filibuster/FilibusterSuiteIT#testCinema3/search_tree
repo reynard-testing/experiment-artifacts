@@ -1,0 +1,18 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label=movies color=black]
+	"4,8,11,16,-92381,11" [label="bookings#1>
+movies" color=black]
+	"4,1,4,4,1,4" -> "4,8,11,16,-92381,11" [label="+4"]
+	"3,12,14,16,-92385,14" [label="bookings#1" color=black]
+	"4,1,4,4,1,4" -> "3,12,14,16,-92385,14" [label="+3"]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"3,5,7,4,-92390,7" [label=bookings color=black]
+	"3,15,23,12,-92397,23" [label="bookings#1>
+movies" color=black]
+	"3,5,7,4,-92390,7" -> "3,15,23,12,-92397,23" [label="+3"]
+	"9,16,26,12,-92398,26" [label="bookings#1" color=black]
+	"3,5,7,4,-92390,7" -> "9,16,26,12,-92398,26" [label="+9"]
+	0 -> "3,5,7,4,-92390,7" [label="+3"]
+}

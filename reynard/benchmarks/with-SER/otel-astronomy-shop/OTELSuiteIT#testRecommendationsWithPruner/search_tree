@@ -1,0 +1,18 @@
+// Faultspace Search
+digraph {
+	0 [label="&empty;" color=black]
+	"4,1,4,4,1,4" [label="product-catalog,product-catalog#1,product-catalog#2,product-catalog#3" color=black]
+	0 -> "4,1,4,4,1,4" [label="+4"]
+	"8,5,15,8,5,15" [label="product-catalog" color=black]
+	0 -> "8,5,15,8,5,15" [label="+8"]
+	"3,9,11,4,-92103,11" [label=recommendation color=black]
+	0 -> "3,9,11,4,-92103,11" [label="+3"]
+	"4,16,19,4,16,19" [label="product-catalog#1" color=black]
+	0 -> "4,16,19,4,16,19" [label="+4"]
+	"4,20,23,4,20,23" [label="product-catalog#2" color=black]
+	0 -> "4,20,23,4,20,23" [label="+4"]
+	"4,24,27,4,24,27" [label="product-catalog#3" color=black]
+	0 -> "4,24,27,4,24,27" [label="+4"]
+	"3,28,30,4,-92328,30" [label=frontend color=black]
+	0 -> "3,28,30,4,-92328,30" [label="+3"]
+}
